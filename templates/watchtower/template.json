@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Watchtower",
+  "name": "watchtower",
+  "category": "Utilities",
+  "description": "Automated Docker container base image updater.",
+  "icon": "templates/watchtower/icon.svg",
+  "image": "containrrr/watchtower:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/watchtower/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "WATCHTOWER_CLEANUP",
+      "label": "Cleanup Old Images",
+      "description": "Remove old images after updating",
+      "default": "true"
+    },
+    {
+      "name": "WATCHTOWER_SCHEDULE",
+      "label": "Cron Schedule",
+      "description": "Cron expression for update checks",
+      "default": "0 0 4 * * *"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

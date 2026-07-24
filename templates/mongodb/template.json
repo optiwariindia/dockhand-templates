@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "MongoDB",
+  "name": "mongodb",
+  "category": "Infrastructure",
+  "description": "High-performance document-oriented NoSQL database server.",
+  "icon": "templates/mongodb/icon.svg",
+  "image": "mongo:8",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/mongodb/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "MONGO_INITDB_ROOT_USERNAME",
+      "label": "Root Username",
+      "description": "MongoDB root administrator username",
+      "default": "admin"
+    },
+    {
+      "name": "MONGO_INITDB_ROOT_PASSWORD",
+      "label": "Root Password",
+      "description": "MongoDB root administrator password",
+      "default": "changeme123"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for storing database persistence files",
+      "default": "./data/mongodb"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone setting",
+      "default": "UTC"
+    }
+  ]
+}

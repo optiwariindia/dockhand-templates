@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Docker Registry",
+  "name": "registry",
+  "category": "Development",
+  "description": "Stateless, highly scalable server application that stores and lets you distribute Docker images.",
+  "icon": "templates/registry/icon.svg",
+  "image": "registry:2",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/registry/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for storing Docker image layers",
+      "default": "./data/registry"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

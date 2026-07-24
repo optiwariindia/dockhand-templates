@@ -1,0 +1,16 @@
+services:
+  gitea:
+    image: gitea/gitea:latest
+    container_name: gitea
+    restart: unless-stopped
+    environment:
+      USER_UID: ${USER_UID}
+      USER_GID: ${USER_GID}
+      TZ: ${TZ}
+    ports:
+      - "3000:3000"
+      - "2222:22"
+    volumes:
+      - ${DATA_PATH}:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro

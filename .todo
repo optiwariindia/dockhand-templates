@@ -1,0 +1,54 @@
+# Dockhand Template Repository Tasklist
+
+## Milestone 1: Repository Foundation & Standards
+- Goal: Set up project structure, standards, documentation, and index generator
+  - User Story: As Lead Engineer Om Prakash Tiwari, I want a clean, well-structured dockhand template repository so that services can be deployed consistently.
+    - [x] Create repository root README.md ✔ @done(26-07-24 16:02)
+    - [x] Define template specification & standards ✔ @done(26-07-24 16:02)
+    - [x] Create index.json build script to automatically index all templates ✔ @done(26-07-24 16:02)
+
+## Milestone 2: High-Priority Core Templates (⭐⭐⭐⭐⭐)
+- Goal: Create 12 essential templates with compose, json, SVG icons, and comprehensive READMEs
+  - User Story: As a system administrator, I want top-tier infrastructure, networking, and AI templates ready to deploy.
+    - [x] MongoDB template ✔ @done(26-07-24 16:02)
+    - [x] PostgreSQL template ✔ @done(26-07-24 16:02)
+    - [x] Redis template ✔ @done(26-07-24 16:02)
+    - [x] MinIO template ✔ @done(26-07-24 16:02)
+    - [x] NATS template ✔ @done(26-07-24 16:02)
+    - [x] NGINX Proxy Manager template ✔ @done(26-07-24 16:02)
+    - [x] Watchtower template ✔ @done(26-07-24 16:02)
+    - [x] Dozzle template ✔ @done(26-07-24 16:02)
+    - [x] Uptime Kuma template ✔ @done(26-07-24 16:02)
+    - [x] Tailscale template ✔ @done(26-07-24 16:02)
+    - [x] Ollama template ✔ @done(26-07-24 16:02)
+    - [x] Open WebUI template ✔ @done(26-07-24 16:02)
+
+## Milestone 3: Secondary Essential Templates (⭐⭐⭐⭐)
+- Goal: Create 8 secondary essential templates
+  - User Story: As a DevOps engineer, I want monitoring, dev, and utility templates.
+    - [x] Grafana template ✔ @done(26-07-24 16:02)
+    - [x] Prometheus template ✔ @done(26-07-24 16:02)
+    - [x] Gitea template ✔ @done(26-07-24 16:02)
+    - [x] Docker Registry template ✔ @done(26-07-24 16:02)
+    - [x] Homepage template ✔ @done(26-07-24 16:02)
+    - [x] FileBrowser template ✔ @done(26-07-24 16:02)
+    - [x] Stirling PDF template ✔ @done(26-07-24 16:02)
+    - [x] Vaultwarden template ✔ @done(26-07-24 16:02)
+
+## Milestone 4: Comprehensive Ecosystem Expansion
+- Goal: Build additional templates for Infrastructure, Reverse Proxy, AI, Monitoring, Networking, Dev & Utilities
+  - User Story: As a self-hoster, I want full coverage of popular open-source software templates.
+    - [x] Infrastructure: MariaDB, MySQL, Valkey, RabbitMQ ✔ @done(26-07-24 16:02)
+    - [x] Reverse Proxy: Traefik, Caddy ✔ @done(26-07-24 16:02)
+    - [x] AI: AnythingLLM, SearXNG, LiteLLM ✔ @done(26-07-24 16:02)
+    - [x] Monitoring: Loki, Beszel ✔ @done(26-07-24 16:02)
+    - [x] Networking: Headscale, WireGuard, AdGuard Home, Pi-hole ✔ @done(26-07-24 16:02)
+    - [x] Development: Portainer, Dockge, Forgejo, Registry UI ✔ @done(26-07-24 16:02)
+
+## Milestone 5: Indexing & Validation
+- Goal: Generate global index.json and validate all compose files, environment parameters, icons, and docs.
+  - User Story: As Lead Engineer Om Prakash Tiwari, I want a single validated index.json linking all templates for Dockhand.
+    - [x] Generate index.json with Portainer v2 / Dockhand format compatibility ✔ @done(26-07-24 16:02)
+    - [x] Validate docker-compose syntax and env variables across all templates ✔ @done(26-07-24 16:02)
+    - [x] Create timestamped session report in reports/ ✔ @done(26-07-24 16:02)
+

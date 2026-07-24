@@ -1,0 +1,53 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "MariaDB",
+  "name": "mariadb",
+  "category": "Infrastructure",
+  "description": "Fast, scalable, open-source relational database management system.",
+  "icon": "templates/mariadb/icon.svg",
+  "image": "mariadb:11",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/mariadb/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "MYSQL_ROOT_PASSWORD",
+      "label": "Root Password",
+      "description": "MariaDB root user password",
+      "default": "changeme123"
+    },
+    {
+      "name": "MYSQL_DATABASE",
+      "label": "Database Name",
+      "description": "Default database name to create",
+      "default": "appdb"
+    },
+    {
+      "name": "MYSQL_USER",
+      "label": "User Name",
+      "description": "Non-root user to create",
+      "default": "appuser"
+    },
+    {
+      "name": "MYSQL_PASSWORD",
+      "label": "User Password",
+      "description": "Password for non-root user",
+      "default": "userpass123"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for data persistence",
+      "default": "./data/mariadb"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

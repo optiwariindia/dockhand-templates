@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Grafana",
+  "name": "grafana",
+  "category": "Monitoring",
+  "description": "The open and composable observability and data visualization platform.",
+  "icon": "templates/grafana/icon.svg",
+  "image": "grafana/grafana:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/grafana/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "GF_SECURITY_ADMIN_USER",
+      "label": "Admin Username",
+      "description": "Grafana administrator username",
+      "default": "admin"
+    },
+    {
+      "name": "GF_SECURITY_ADMIN_PASSWORD",
+      "label": "Admin Password",
+      "description": "Grafana administrator password",
+      "default": "changeme123"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for storing Grafana dashboards and DB",
+      "default": "./data/grafana"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

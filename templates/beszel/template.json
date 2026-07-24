@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Beszel",
+  "name": "beszel",
+  "category": "Monitoring",
+  "description": "Lightweight server monitoring hub with Docker statistics, alerts & charts.",
+  "icon": "templates/beszel/icon.svg",
+  "image": "henrygd/beszel:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/beszel/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for Beszel data storage",
+      "default": "./data/beszel"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

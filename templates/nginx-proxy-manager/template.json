@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "NGINX Proxy Manager",
+  "name": "nginx-proxy-manager",
+  "category": "Reverse Proxy",
+  "description": "Intuitive web interface for NGINX proxying with free SSL certificates.",
+  "icon": "templates/nginx-proxy-manager/icon.svg",
+  "image": "jc21/nginx-proxy-manager:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/nginx-proxy-manager/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for app data & database",
+      "default": "./data/npm"
+    },
+    {
+      "name": "LETSENCRYPT_PATH",
+      "label": "LetsEncrypt Path",
+      "description": "Host directory for SSL certificates",
+      "default": "./data/npm/letsencrypt"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

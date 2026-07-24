@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Gitea",
+  "name": "gitea",
+  "category": "Development",
+  "description": "Painless self-hosted Git service written in Go.",
+  "icon": "templates/gitea/icon.svg",
+  "image": "gitea/gitea:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/gitea/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "USER_UID",
+      "label": "User UID",
+      "description": "UID for Gitea process execution",
+      "default": "1000"
+    },
+    {
+      "name": "USER_GID",
+      "label": "User GID",
+      "description": "GID for Gitea process execution",
+      "default": "1000"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for git repositories and user data",
+      "default": "./data/gitea"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_vaultwarden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#175DDC" />
+      <stop offset="100%" stop-color="#0E3989" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad_vaultwarden)" />
+  <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
+    <path d="M64 12L16 32v32c0 32 48 52 48 52s48-20 48-52V32L64 12zm0 28a16 16 0 0116 16c0 10.7-7.1 19.8-17 22.8V88H65v-9.2C55.1 75.8 48 66.7 48 56a16 16 0 0116-16z"/>
+  </g>
+</svg>

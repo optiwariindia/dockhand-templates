@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Stirling PDF",
+  "name": "stirling-pdf",
+  "category": "Utilities",
+  "description": "Robust, locally hosted web application that allows you to perform operations on PDF files.",
+  "icon": "templates/stirling-pdf/icon.svg",
+  "image": "frooodle/s-pdf:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/stirling-pdf/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DOCKER_ENABLE_SECURITY",
+      "label": "Enable Authentication",
+      "description": "Enable user login and security module",
+      "default": "false"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for OCR training data and custom configs",
+      "default": "./data/stirling-pdf"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

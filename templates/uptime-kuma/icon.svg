@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_uptime-kuma" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5CDD8B" />
+      <stop offset="100%" stop-color="#1C8242" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad_uptime-kuma)" />
+  <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
+    <path d="M64 16C37.5 16 16 37.5 16 64s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm-8 72L28 60l12-12 16 16 36-36 12 12-48 48z"/>
+  </g>
+</svg>

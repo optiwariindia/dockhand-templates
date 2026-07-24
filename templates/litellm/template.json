@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "LiteLLM",
+  "name": "litellm",
+  "category": "AI",
+  "description": "Unified I/O proxy for 100+ LLM APIs with load balancing & tracking.",
+  "icon": "templates/litellm/icon.svg",
+  "image": "ghcr.io/berriai/litellm:main-latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/litellm/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "LITELLM_MASTER_KEY",
+      "label": "Master Admin Key",
+      "description": "Admin API key for proxy authentication",
+      "default": "sk-1234masterkey"
+    },
+    {
+      "name": "CONFIG_PATH",
+      "label": "Config File Directory",
+      "description": "Directory containing config.yaml",
+      "default": "./config/litellm"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

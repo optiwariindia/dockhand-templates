@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Dozzle",
+  "name": "dozzle",
+  "category": "Utilities",
+  "description": "Real-time log viewer for Docker containers in your browser.",
+  "icon": "templates/dozzle/icon.svg",
+  "image": "amir20/dozzle:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/dozzle/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DOZZLE_LEVEL",
+      "label": "Log Level",
+      "description": "Dozzle process logging verbosity",
+      "default": "info"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "PostgreSQL",
+  "name": "postgresql",
+  "category": "Infrastructure",
+  "description": "Powerful, open-source object-relational database system.",
+  "icon": "templates/postgresql/icon.svg",
+  "image": "postgres:17-alpine",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/postgresql/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "POSTGRES_USER",
+      "label": "Postgres User",
+      "description": "Superuser username",
+      "default": "postgres"
+    },
+    {
+      "name": "POSTGRES_PASSWORD",
+      "label": "Postgres Password",
+      "description": "Superuser password",
+      "default": "changeme123"
+    },
+    {
+      "name": "POSTGRES_DB",
+      "label": "Initial Database",
+      "description": "Default database name created upon startup",
+      "default": "appdb"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for data persistence",
+      "default": "./data/postgres"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

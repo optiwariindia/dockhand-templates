@@ -1,0 +1,1448 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "version": "2",
+      "type": 1,
+      "title": "AdGuard Home",
+      "name": "adguard-home",
+      "category": "Networking",
+      "description": "Network-wide software for blocking ads & tracking and controlling DNS requests.",
+      "icon": "templates/adguard-home/icon.svg",
+      "image": "adguard/adguardhome:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/adguard-home/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Directory Path",
+          "description": "Host directory for AdGuardHome.yaml",
+          "default": "./config/adguard"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for DNS query logs & stats",
+          "default": "./data/adguard"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "AnythingLLM",
+      "name": "anythingllm",
+      "category": "AI",
+      "description": "All-in-one AI enterprise workspace for RAG, custom AI agents, and documents.",
+      "icon": "templates/anythingllm/icon.svg",
+      "image": "mintplexlabs/anythingllm:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/anythingllm/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "STORAGE_DIR",
+          "label": "Storage Path",
+          "description": "Host path for vector databases and documents",
+          "default": "./data/anythingllm"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Beszel",
+      "name": "beszel",
+      "category": "Monitoring",
+      "description": "Lightweight server monitoring hub with Docker statistics, alerts & charts.",
+      "icon": "templates/beszel/icon.svg",
+      "image": "henrygd/beszel:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/beszel/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for Beszel data storage",
+          "default": "./data/beszel"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Caddy",
+      "name": "caddy",
+      "category": "Reverse Proxy",
+      "description": "Powerful, enterprise-ready open-source web server with automatic HTTPS.",
+      "icon": "templates/caddy/icon.svg",
+      "image": "caddy:2-alpine",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/caddy/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Directory Path",
+          "description": "Host directory for Caddyfile",
+          "default": "./config/caddy"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for certificates & state",
+          "default": "./data/caddy"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Dockge",
+      "name": "dockge",
+      "category": "Development",
+      "description": "A slick, user-friendly & reactive self-hosted Docker Compose manager.",
+      "icon": "templates/dockge/icon.svg",
+      "image": "louislam/dockge:1",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/dockge/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "STACKS_DIR",
+          "label": "Stacks Directory",
+          "description": "Host path where Docker compose stacks are stored",
+          "default": "/opt/stacks"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for Dockge database",
+          "default": "./data/dockge"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Dozzle",
+      "name": "dozzle",
+      "category": "Utilities",
+      "description": "Real-time log viewer for Docker containers in your browser.",
+      "icon": "templates/dozzle/icon.svg",
+      "image": "amir20/dozzle:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/dozzle/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DOZZLE_LEVEL",
+          "label": "Log Level",
+          "description": "Dozzle process logging verbosity",
+          "default": "info"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "FileBrowser",
+      "name": "filebrowser",
+      "category": "Utilities",
+      "description": "Web-based file management interface to upload, edit, preview, and share files.",
+      "icon": "templates/filebrowser/icon.svg",
+      "image": "filebrowser/filebrowser:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/filebrowser/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Shared Directory Path",
+          "description": "Host path for managed storage files",
+          "default": "./data/filebrowser/files"
+        },
+        {
+          "name": "DATABASE_PATH",
+          "label": "Database Path",
+          "description": "Host path for filebrowser.db SQLite file",
+          "default": "./data/filebrowser/filebrowser.db"
+        },
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Path",
+          "description": "Host path for settings.json",
+          "default": "./config/filebrowser/settings.json"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Forgejo",
+      "name": "forgejo",
+      "category": "Development",
+      "description": "Self-hosted lightweight software development platform driven by the community.",
+      "icon": "templates/forgejo/icon.svg",
+      "image": "codeberg.org/forgejo/forgejo:9",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/forgejo/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "USER_UID",
+          "label": "User UID",
+          "description": "UID for user execution",
+          "default": "1000"
+        },
+        {
+          "name": "USER_GID",
+          "label": "User GID",
+          "description": "GID for group execution",
+          "default": "1000"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for repositories & state",
+          "default": "./data/forgejo"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Gitea",
+      "name": "gitea",
+      "category": "Development",
+      "description": "Painless self-hosted Git service written in Go.",
+      "icon": "templates/gitea/icon.svg",
+      "image": "gitea/gitea:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/gitea/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "USER_UID",
+          "label": "User UID",
+          "description": "UID for Gitea process execution",
+          "default": "1000"
+        },
+        {
+          "name": "USER_GID",
+          "label": "User GID",
+          "description": "GID for Gitea process execution",
+          "default": "1000"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for git repositories and user data",
+          "default": "./data/gitea"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Grafana",
+      "name": "grafana",
+      "category": "Monitoring",
+      "description": "The open and composable observability and data visualization platform.",
+      "icon": "templates/grafana/icon.svg",
+      "image": "grafana/grafana:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/grafana/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "GF_SECURITY_ADMIN_USER",
+          "label": "Admin Username",
+          "description": "Grafana administrator username",
+          "default": "admin"
+        },
+        {
+          "name": "GF_SECURITY_ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Grafana administrator password",
+          "default": "changeme123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for storing Grafana dashboards and DB",
+          "default": "./data/grafana"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Headscale",
+      "name": "headscale",
+      "category": "Networking",
+      "description": "Open-source, self-hosted implementation of the Tailscale control server.",
+      "icon": "templates/headscale/icon.svg",
+      "image": "headscale/headscale:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/headscale/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Directory Path",
+          "description": "Host directory for config.yaml",
+          "default": "./config/headscale"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for Headscale SQLite/state data",
+          "default": "./data/headscale"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Homepage",
+      "name": "homepage",
+      "category": "Utilities",
+      "description": "A modern, secure, highly customizable application dashboard with integrations.",
+      "icon": "templates/homepage/icon.svg",
+      "image": "ghcr.io/gethomepage/homepage:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/homepage/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Directory Path",
+          "description": "Host directory for settings.yaml, services.yaml, bookmarks.yaml",
+          "default": "./config/homepage"
+        },
+        {
+          "name": "PUID",
+          "label": "Process UID",
+          "description": "Process User ID",
+          "default": "1000"
+        },
+        {
+          "name": "PGID",
+          "label": "Process GID",
+          "description": "Process Group ID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "LiteLLM",
+      "name": "litellm",
+      "category": "AI",
+      "description": "Unified I/O proxy for 100+ LLM APIs with load balancing & tracking.",
+      "icon": "templates/litellm/icon.svg",
+      "image": "ghcr.io/berriai/litellm:main-latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/litellm/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "LITELLM_MASTER_KEY",
+          "label": "Master Admin Key",
+          "description": "Admin API key for proxy authentication",
+          "default": "sk-1234masterkey"
+        },
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config File Directory",
+          "description": "Directory containing config.yaml",
+          "default": "./config/litellm"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Loki",
+      "name": "loki",
+      "category": "Monitoring",
+      "description": "Like Prometheus, but for logs. High performance log aggregation system.",
+      "icon": "templates/loki/icon.svg",
+      "image": "grafana/loki:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/loki/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for log index and chunk storage",
+          "default": "./data/loki"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "MariaDB",
+      "name": "mariadb",
+      "category": "Infrastructure",
+      "description": "Fast, scalable, open-source relational database management system.",
+      "icon": "templates/mariadb/icon.svg",
+      "image": "mariadb:11",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/mariadb/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "Root Password",
+          "description": "MariaDB root user password",
+          "default": "changeme123"
+        },
+        {
+          "name": "MYSQL_DATABASE",
+          "label": "Database Name",
+          "description": "Default database name to create",
+          "default": "appdb"
+        },
+        {
+          "name": "MYSQL_USER",
+          "label": "User Name",
+          "description": "Non-root user to create",
+          "default": "appuser"
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "label": "User Password",
+          "description": "Password for non-root user",
+          "default": "userpass123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for data persistence",
+          "default": "./data/mariadb"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "MinIO",
+      "name": "minio",
+      "category": "Infrastructure",
+      "description": "High-performance S3-compatible object storage server.",
+      "icon": "templates/minio/icon.svg",
+      "image": "minio/minio:RELEASE.2024-11-07T00-52-20Z",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/minio/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "MINIO_ROOT_USER",
+          "label": "Root Access Key",
+          "description": "MinIO admin user/access key",
+          "default": "minioadmin"
+        },
+        {
+          "name": "MINIO_ROOT_PASSWORD",
+          "label": "Root Secret Key",
+          "description": "MinIO admin secret key (min 8 chars)",
+          "default": "minioadmin123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for object storage data",
+          "default": "./data/minio"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "MongoDB",
+      "name": "mongodb",
+      "category": "Infrastructure",
+      "description": "High-performance document-oriented NoSQL database server.",
+      "icon": "templates/mongodb/icon.svg",
+      "image": "mongo:8",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/mongodb/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "MONGO_INITDB_ROOT_USERNAME",
+          "label": "Root Username",
+          "description": "MongoDB root administrator username",
+          "default": "admin"
+        },
+        {
+          "name": "MONGO_INITDB_ROOT_PASSWORD",
+          "label": "Root Password",
+          "description": "MongoDB root administrator password",
+          "default": "changeme123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for storing database persistence files",
+          "default": "./data/mongodb"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone setting",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "MySQL",
+      "name": "mysql",
+      "category": "Infrastructure",
+      "description": "World's most popular open-source relational database system.",
+      "icon": "templates/mysql/icon.svg",
+      "image": "mysql:8.4",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/mysql/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "Root Password",
+          "description": "MySQL root password",
+          "default": "changeme123"
+        },
+        {
+          "name": "MYSQL_DATABASE",
+          "label": "Database Name",
+          "description": "Default initial database",
+          "default": "appdb"
+        },
+        {
+          "name": "MYSQL_USER",
+          "label": "Database User",
+          "description": "Standard user",
+          "default": "dbuser"
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "label": "User Password",
+          "description": "Standard user password",
+          "default": "userpass123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Data directory on host",
+          "default": "./data/mysql"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "NATS",
+      "name": "nats",
+      "category": "Infrastructure",
+      "description": "Cloud-native microservices messaging system and JetStream persistence engine.",
+      "icon": "templates/nats/icon.svg",
+      "image": "nats:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/nats/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for JetStream storage",
+          "default": "./data/nats"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "NGINX Proxy Manager",
+      "name": "nginx-proxy-manager",
+      "category": "Reverse Proxy",
+      "description": "Intuitive web interface for NGINX proxying with free SSL certificates.",
+      "icon": "templates/nginx-proxy-manager/icon.svg",
+      "image": "jc21/nginx-proxy-manager:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/nginx-proxy-manager/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for app data & database",
+          "default": "./data/npm"
+        },
+        {
+          "name": "LETSENCRYPT_PATH",
+          "label": "LetsEncrypt Path",
+          "description": "Host directory for SSL certificates",
+          "default": "./data/npm/letsencrypt"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Ollama",
+      "name": "ollama",
+      "category": "AI",
+      "description": "Get up and running with Llama 3, Mistral, Gemma, and other LLMs locally.",
+      "icon": "templates/ollama/icon.svg",
+      "image": "ollama/ollama:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/ollama/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory to store downloaded model weights",
+          "default": "./data/ollama"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Open WebUI",
+      "name": "open-webui",
+      "category": "AI",
+      "description": "User-friendly WebUI for Ollama, OpenAI, and custom LLM inference endpoints.",
+      "icon": "templates/open-webui/icon.svg",
+      "image": "ghcr.io/open-webui/open-webui:main",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/open-webui/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "OLLAMA_BASE_URL",
+          "label": "Ollama API URL",
+          "description": "Endpoint URL for connected Ollama instance",
+          "default": "http://ollama:11434"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for WebUI persistent data",
+          "default": "./data/open-webui"
+        },
+        {
+          "name": "WEBUI_SECRET_KEY",
+          "label": "Secret Key",
+          "description": "Session encryption key",
+          "default": "supersecretkey123"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Pi-hole",
+      "name": "pi-hole",
+      "category": "Networking",
+      "description": "DNS sinkhole that protects your devices from unwanted content without extra software.",
+      "icon": "templates/pi-hole/icon.svg",
+      "image": "pihole/pihole:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/pi-hole/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "WEBPASSWORD",
+          "label": "Admin Password",
+          "description": "Web admin console password",
+          "default": "changeme123"
+        },
+        {
+          "name": "FTLCONF_LOCAL_IPV4",
+          "label": "Server IPv4 Address",
+          "description": "Static IP of host running Pi-hole",
+          "default": "192.168.1.100"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for configuration files",
+          "default": "./data/pihole"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Portainer",
+      "name": "portainer",
+      "category": "Development",
+      "description": "Making Docker & Kubernetes management easy with a modern Web UI.",
+      "icon": "templates/portainer/icon.svg",
+      "image": "portainer/portainer-ce:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/portainer/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for Portainer database",
+          "default": "./data/portainer"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "PostgreSQL",
+      "name": "postgresql",
+      "category": "Infrastructure",
+      "description": "Powerful, open-source object-relational database system.",
+      "icon": "templates/postgresql/icon.svg",
+      "image": "postgres:17-alpine",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/postgresql/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "POSTGRES_USER",
+          "label": "Postgres User",
+          "description": "Superuser username",
+          "default": "postgres"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "label": "Postgres Password",
+          "description": "Superuser password",
+          "default": "changeme123"
+        },
+        {
+          "name": "POSTGRES_DB",
+          "label": "Initial Database",
+          "description": "Default database name created upon startup",
+          "default": "appdb"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for data persistence",
+          "default": "./data/postgres"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Prometheus",
+      "name": "prometheus",
+      "category": "Monitoring",
+      "description": "Open-source monitoring system and time-series database.",
+      "icon": "templates/prometheus/icon.svg",
+      "image": "prom/prometheus:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/prometheus/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for TSDB metric persistence",
+          "default": "./data/prometheus"
+        },
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Directory Path",
+          "description": "Host path for prometheus.yml config file",
+          "default": "./config/prometheus"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "RabbitMQ",
+      "name": "rabbitmq",
+      "category": "Infrastructure",
+      "description": "Robust, widely deployed open-source message broker.",
+      "icon": "templates/rabbitmq/icon.svg",
+      "image": "rabbitmq:3-management-alpine",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/rabbitmq/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "RABBITMQ_DEFAULT_USER",
+          "label": "Management User",
+          "description": "Administrator login username",
+          "default": "admin"
+        },
+        {
+          "name": "RABBITMQ_DEFAULT_PASS",
+          "label": "Management Password",
+          "description": "Administrator login password",
+          "default": "changeme123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for RabbitMQ data persistence",
+          "default": "./data/rabbitmq"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Redis",
+      "name": "redis",
+      "category": "Infrastructure",
+      "description": "In-memory data structure store used as database, cache, and message broker.",
+      "icon": "templates/redis/icon.svg",
+      "image": "redis:7-alpine",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/redis/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "REDIS_PASSWORD",
+          "label": "Redis Password",
+          "description": "Authentication password for Redis client connections",
+          "default": "changeme123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Persistence directory for RDB/AOF dumps",
+          "default": "./data/redis"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Registry UI",
+      "name": "registry-ui",
+      "category": "Development",
+      "description": "User interface for private Docker registries to search and manage container tags.",
+      "icon": "templates/registry-ui/icon.svg",
+      "image": "joxit/docker-registry-ui:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/registry-ui/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "REGISTRY_TITLE",
+          "label": "Registry Title",
+          "description": "UI Display Title",
+          "default": "My Private Registry"
+        },
+        {
+          "name": "REGISTRY_URL",
+          "label": "Registry Service URL",
+          "description": "URL of the target Registry v2 service",
+          "default": "http://registry:5000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Docker Registry",
+      "name": "registry",
+      "category": "Development",
+      "description": "Stateless, highly scalable server application that stores and lets you distribute Docker images.",
+      "icon": "templates/registry/icon.svg",
+      "image": "registry:2",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/registry/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for storing Docker image layers",
+          "default": "./data/registry"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "SearXNG",
+      "name": "searxng",
+      "category": "AI",
+      "description": "Privacy-respecting, hackable metasearch engine aggregator.",
+      "icon": "templates/searxng/icon.svg",
+      "image": "searxng/searxng:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/searxng/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "SEARXNG_BASE_URL",
+          "label": "Base URL",
+          "description": "Public domain or URL of SearXNG",
+          "default": "http://localhost:8080"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for configuration files",
+          "default": "./data/searxng"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Stirling PDF",
+      "name": "stirling-pdf",
+      "category": "Utilities",
+      "description": "Robust, locally hosted web application that allows you to perform operations on PDF files.",
+      "icon": "templates/stirling-pdf/icon.svg",
+      "image": "frooodle/s-pdf:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/stirling-pdf/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DOCKER_ENABLE_SECURITY",
+          "label": "Enable Authentication",
+          "description": "Enable user login and security module",
+          "default": "false"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for OCR training data and custom configs",
+          "default": "./data/stirling-pdf"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Tailscale",
+      "name": "tailscale",
+      "category": "Networking",
+      "description": "Zero-config VPN that creates a secure mesh network among all your devices.",
+      "icon": "templates/tailscale/icon.svg",
+      "image": "tailscale/tailscale:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/tailscale/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "TS_AUTHKEY",
+          "label": "Auth Key",
+          "description": "Tailscale reusable or ephemeral authentication key",
+          "default": ""
+        },
+        {
+          "name": "TS_EXTRA_ARGS",
+          "label": "Extra Arguments",
+          "description": "Additional flags (e.g. --advertise-routes=192.168.1.0/24)",
+          "default": "--advertise-exit-node"
+        },
+        {
+          "name": "TS_STATE_DIR",
+          "label": "State Directory Path",
+          "description": "Host directory for persistent state",
+          "default": "./data/tailscale"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Traefik",
+      "name": "traefik",
+      "category": "Reverse Proxy",
+      "description": "Cloud-native edge router and HTTP reverse proxy with auto-discovery.",
+      "icon": "templates/traefik/icon.svg",
+      "image": "traefik:v3.1",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/traefik/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for dynamic configuration & acme.json",
+          "default": "./data/traefik"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Uptime Kuma",
+      "name": "uptime-kuma",
+      "category": "Monitoring",
+      "description": "A fancy, easy-to-use self-hosted monitoring tool.",
+      "icon": "templates/uptime-kuma/icon.svg",
+      "image": "louislam/uptime-kuma:1",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/uptime-kuma/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for Uptime Kuma SQLite database",
+          "default": "./data/uptime-kuma"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Valkey",
+      "name": "valkey",
+      "category": "Infrastructure",
+      "description": "High-performance open-source in-memory datastore (Redis fork).",
+      "icon": "templates/valkey/icon.svg",
+      "image": "valkey/valkey:8-alpine",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/valkey/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "VALKEY_PASSWORD",
+          "label": "Valkey Password",
+          "description": "Authentication password for Valkey server",
+          "default": "changeme123"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for data storage",
+          "default": "./data/valkey"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Vaultwarden",
+      "name": "vaultwarden",
+      "category": "Utilities",
+      "description": "Unofficial Bitwarden compatible server written in Rust, light on memory.",
+      "icon": "templates/vaultwarden/icon.svg",
+      "image": "vaultwarden/server:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/vaultwarden/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "WEBSOCKET_ENABLED",
+          "label": "Enable WebSockets",
+          "description": "Enable WebSocket notifications",
+          "default": "true"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for vault database & attachments",
+          "default": "./data/vaultwarden"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Watchtower",
+      "name": "watchtower",
+      "category": "Utilities",
+      "description": "Automated Docker container base image updater.",
+      "icon": "templates/watchtower/icon.svg",
+      "image": "containrrr/watchtower:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/watchtower/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "WATCHTOWER_CLEANUP",
+          "label": "Cleanup Old Images",
+          "description": "Remove old images after updating",
+          "default": "true"
+        },
+        {
+          "name": "WATCHTOWER_SCHEDULE",
+          "label": "Cron Schedule",
+          "description": "Cron expression for update checks",
+          "default": "0 0 4 * * *"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "WireGuard",
+      "name": "wireguard",
+      "category": "Networking",
+      "description": "Extremely simple yet fast and modern VPN server.",
+      "icon": "templates/wireguard/icon.svg",
+      "image": "lscr.io/linuxserver/wireguard:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/dockhand-templates",
+        "stackfile": "templates/wireguard/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PUID",
+          "label": "User ID",
+          "description": "Process User ID",
+          "default": "1000"
+        },
+        {
+          "name": "PGID",
+          "label": "Group ID",
+          "description": "Process Group ID",
+          "default": "1000"
+        },
+        {
+          "name": "SERVERURL",
+          "label": "Server Public IP / Domain",
+          "description": "Public domain or IP address for clients to connect",
+          "default": "wireguard.example.com"
+        },
+        {
+          "name": "SERVERPORT",
+          "label": "Server Port",
+          "description": "External UDP Port",
+          "default": "51820"
+        },
+        {
+          "name": "PEERS",
+          "label": "Number of Peers",
+          "description": "Number of client configuration files to generate",
+          "default": "5"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host directory for generated configs & keys",
+          "default": "./data/wireguard"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    }
+  ]
+}

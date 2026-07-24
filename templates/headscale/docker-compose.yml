@@ -1,0 +1,14 @@
+services:
+  headscale:
+    image: headscale/headscale:latest
+    container_name: headscale
+    restart: unless-stopped
+    command: headscale serve
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${CONFIG_PATH}:/etc/headscale
+      - ${DATA_PATH}:/var/lib/headscale

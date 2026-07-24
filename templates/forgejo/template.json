@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Forgejo",
+  "name": "forgejo",
+  "category": "Development",
+  "description": "Self-hosted lightweight software development platform driven by the community.",
+  "icon": "templates/forgejo/icon.svg",
+  "image": "codeberg.org/forgejo/forgejo:9",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/forgejo/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "USER_UID",
+      "label": "User UID",
+      "description": "UID for user execution",
+      "default": "1000"
+    },
+    {
+      "name": "USER_GID",
+      "label": "User GID",
+      "description": "GID for group execution",
+      "default": "1000"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for repositories & state",
+      "default": "./data/forgejo"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

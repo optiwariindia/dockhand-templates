@@ -1,0 +1,53 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "MySQL",
+  "name": "mysql",
+  "category": "Infrastructure",
+  "description": "World's most popular open-source relational database system.",
+  "icon": "templates/mysql/icon.svg",
+  "image": "mysql:8.4",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/mysql/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "MYSQL_ROOT_PASSWORD",
+      "label": "Root Password",
+      "description": "MySQL root password",
+      "default": "changeme123"
+    },
+    {
+      "name": "MYSQL_DATABASE",
+      "label": "Database Name",
+      "description": "Default initial database",
+      "default": "appdb"
+    },
+    {
+      "name": "MYSQL_USER",
+      "label": "Database User",
+      "description": "Standard user",
+      "default": "dbuser"
+    },
+    {
+      "name": "MYSQL_PASSWORD",
+      "label": "User Password",
+      "description": "Standard user password",
+      "default": "userpass123"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Data directory on host",
+      "default": "./data/mysql"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

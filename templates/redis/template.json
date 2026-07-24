@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Redis",
+  "name": "redis",
+  "category": "Infrastructure",
+  "description": "In-memory data structure store used as database, cache, and message broker.",
+  "icon": "templates/redis/icon.svg",
+  "image": "redis:7-alpine",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/redis/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "REDIS_PASSWORD",
+      "label": "Redis Password",
+      "description": "Authentication password for Redis client connections",
+      "default": "changeme123"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Persistence directory for RDB/AOF dumps",
+      "default": "./data/redis"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

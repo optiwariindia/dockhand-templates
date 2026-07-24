@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Pi-hole",
+  "name": "pi-hole",
+  "category": "Networking",
+  "description": "DNS sinkhole that protects your devices from unwanted content without extra software.",
+  "icon": "templates/pi-hole/icon.svg",
+  "image": "pihole/pihole:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/pi-hole/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "WEBPASSWORD",
+      "label": "Admin Password",
+      "description": "Web admin console password",
+      "default": "changeme123"
+    },
+    {
+      "name": "FTLCONF_LOCAL_IPV4",
+      "label": "Server IPv4 Address",
+      "description": "Static IP of host running Pi-hole",
+      "default": "192.168.1.100"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for configuration files",
+      "default": "./data/pihole"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

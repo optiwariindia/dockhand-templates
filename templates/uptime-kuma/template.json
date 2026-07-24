@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Uptime Kuma",
+  "name": "uptime-kuma",
+  "category": "Monitoring",
+  "description": "A fancy, easy-to-use self-hosted monitoring tool.",
+  "icon": "templates/uptime-kuma/icon.svg",
+  "image": "louislam/uptime-kuma:1",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/uptime-kuma/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for Uptime Kuma SQLite database",
+      "default": "./data/uptime-kuma"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "FileBrowser",
+  "name": "filebrowser",
+  "category": "Utilities",
+  "description": "Web-based file management interface to upload, edit, preview, and share files.",
+  "icon": "templates/filebrowser/icon.svg",
+  "image": "filebrowser/filebrowser:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/filebrowser/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Shared Directory Path",
+      "description": "Host path for managed storage files",
+      "default": "./data/filebrowser/files"
+    },
+    {
+      "name": "DATABASE_PATH",
+      "label": "Database Path",
+      "description": "Host path for filebrowser.db SQLite file",
+      "default": "./data/filebrowser/filebrowser.db"
+    },
+    {
+      "name": "CONFIG_PATH",
+      "label": "Config Path",
+      "description": "Host path for settings.json",
+      "default": "./config/filebrowser/settings.json"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

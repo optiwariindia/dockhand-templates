@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Ollama",
+  "name": "ollama",
+  "category": "AI",
+  "description": "Get up and running with Llama 3, Mistral, Gemma, and other LLMs locally.",
+  "icon": "templates/ollama/icon.svg",
+  "image": "ollama/ollama:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/ollama/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory to store downloaded model weights",
+      "default": "./data/ollama"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

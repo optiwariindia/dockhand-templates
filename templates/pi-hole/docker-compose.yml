@@ -1,0 +1,16 @@
+services:
+  pi-hole:
+    image: pihole/pihole:latest
+    container_name: pi-hole
+    restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80/tcp"
+    environment:
+      TZ: ${TZ}
+      WEBPASSWORD: ${WEBPASSWORD}
+      FTLCONF_LOCAL_IPV4: ${FTLCONF_LOCAL_IPV4}
+    volumes:
+      - ${DATA_PATH}/etc-pihole:/etc/pihole
+      - ${DATA_PATH}/etc-dnsmasq.d:/etc/dnsmasq.d

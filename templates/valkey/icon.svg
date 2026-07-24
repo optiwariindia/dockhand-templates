@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_valkey" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#3730A3" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad_valkey)" />
+  <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
+    <path d="M64 12L12 36v56l52 24 52-24V36L64 12zm0 24l28 14-28 14-28-14 28-14z"/>
+  </g>
+</svg>

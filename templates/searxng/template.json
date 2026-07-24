@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "SearXNG",
+  "name": "searxng",
+  "category": "AI",
+  "description": "Privacy-respecting, hackable metasearch engine aggregator.",
+  "icon": "templates/searxng/icon.svg",
+  "image": "searxng/searxng:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/searxng/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "SEARXNG_BASE_URL",
+      "label": "Base URL",
+      "description": "Public domain or URL of SearXNG",
+      "default": "http://localhost:8080"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for configuration files",
+      "default": "./data/searxng"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

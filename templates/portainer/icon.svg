@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_portainer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#13BEF9" />
+      <stop offset="100%" stop-color="#0B799F" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad_portainer)" />
+  <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
+    <path d="M16 24h96v80H16V24zm32 16v48h48V40H48z"/>
+  </g>
+</svg>

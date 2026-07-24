@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Vaultwarden",
+  "name": "vaultwarden",
+  "category": "Utilities",
+  "description": "Unofficial Bitwarden compatible server written in Rust, light on memory.",
+  "icon": "templates/vaultwarden/icon.svg",
+  "image": "vaultwarden/server:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/vaultwarden/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "WEBSOCKET_ENABLED",
+      "label": "Enable WebSockets",
+      "description": "Enable WebSocket notifications",
+      "default": "true"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for vault database & attachments",
+      "default": "./data/vaultwarden"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

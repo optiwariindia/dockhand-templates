@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_mongodb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#13AA52" />
+      <stop offset="100%" stop-color="#0B6631" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad_mongodb)" />
+  <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
+    <path d="M64 0C64 0 28 32 28 72c0 24 16 48 36 56v-28c0-8 8-16 16-16s16 8 16 16v28c20-8 36-32 36-56C100 32 64 0 64 0zm0 64c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Open WebUI",
+  "name": "open-webui",
+  "category": "AI",
+  "description": "User-friendly WebUI for Ollama, OpenAI, and custom LLM inference endpoints.",
+  "icon": "templates/open-webui/icon.svg",
+  "image": "ghcr.io/open-webui/open-webui:main",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/open-webui/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "OLLAMA_BASE_URL",
+      "label": "Ollama API URL",
+      "description": "Endpoint URL for connected Ollama instance",
+      "default": "http://ollama:11434"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for WebUI persistent data",
+      "default": "./data/open-webui"
+    },
+    {
+      "name": "WEBUI_SECRET_KEY",
+      "label": "Secret Key",
+      "description": "Session encryption key",
+      "default": "supersecretkey123"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+services:
+  registry-ui:
+    image: joxit/docker-registry-ui:latest
+    container_name: registry-ui
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      REGISTRY_TITLE: ${REGISTRY_TITLE}
+      REGISTRY_URL: ${REGISTRY_URL}
+      SINGLE_REGISTRY: "true"
+      TZ: ${TZ}

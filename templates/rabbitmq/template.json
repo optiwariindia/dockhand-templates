@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "RabbitMQ",
+  "name": "rabbitmq",
+  "category": "Infrastructure",
+  "description": "Robust, widely deployed open-source message broker.",
+  "icon": "templates/rabbitmq/icon.svg",
+  "image": "rabbitmq:3-management-alpine",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/rabbitmq/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "RABBITMQ_DEFAULT_USER",
+      "label": "Management User",
+      "description": "Administrator login username",
+      "default": "admin"
+    },
+    {
+      "name": "RABBITMQ_DEFAULT_PASS",
+      "label": "Management Password",
+      "description": "Administrator login password",
+      "default": "changeme123"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for RabbitMQ data persistence",
+      "default": "./data/rabbitmq"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

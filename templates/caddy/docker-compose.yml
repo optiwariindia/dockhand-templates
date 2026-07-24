@@ -1,0 +1,15 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${CONFIG_PATH}/Caddyfile:/etc/caddy/Caddyfile
+      - ${DATA_PATH}/data:/data
+      - ${DATA_PATH}/config:/config

@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "AdGuard Home",
+  "name": "adguard-home",
+  "category": "Networking",
+  "description": "Network-wide software for blocking ads & tracking and controlling DNS requests.",
+  "icon": "templates/adguard-home/icon.svg",
+  "image": "adguard/adguardhome:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/adguard-home/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "CONFIG_PATH",
+      "label": "Config Directory Path",
+      "description": "Host directory for AdGuardHome.yaml",
+      "default": "./config/adguard"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host directory for DNS query logs & stats",
+      "default": "./data/adguard"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Portainer",
+  "name": "portainer",
+  "category": "Development",
+  "description": "Making Docker & Kubernetes management easy with a modern Web UI.",
+  "icon": "templates/portainer/icon.svg",
+  "image": "portainer/portainer-ce:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/portainer/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for Portainer database",
+      "default": "./data/portainer"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

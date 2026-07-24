@@ -1,0 +1,15 @@
+services:
+  adguard-home:
+    image: adguard/adguardhome:latest
+    container_name: adguard-home
+    restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80/tcp"
+      - "3000:3000/tcp"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${CONFIG_PATH}:/opt/adguardhome/conf
+      - ${DATA_PATH}:/opt/adguardhome/work

@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "AnythingLLM",
+  "name": "anythingllm",
+  "category": "AI",
+  "description": "All-in-one AI enterprise workspace for RAG, custom AI agents, and documents.",
+  "icon": "templates/anythingllm/icon.svg",
+  "image": "mintplexlabs/anythingllm:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/anythingllm/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "STORAGE_DIR",
+      "label": "Storage Path",
+      "description": "Host path for vector databases and documents",
+      "default": "./data/anythingllm"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+services:
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${DATA_PATH}:/loki

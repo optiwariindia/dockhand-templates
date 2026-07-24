@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Headscale",
+  "name": "headscale",
+  "category": "Networking",
+  "description": "Open-source, self-hosted implementation of the Tailscale control server.",
+  "icon": "templates/headscale/icon.svg",
+  "image": "headscale/headscale:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/headscale/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "CONFIG_PATH",
+      "label": "Config Directory Path",
+      "description": "Host directory for config.yaml",
+      "default": "./config/headscale"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for Headscale SQLite/state data",
+      "default": "./data/headscale"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

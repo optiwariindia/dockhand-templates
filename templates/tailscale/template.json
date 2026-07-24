@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Tailscale",
+  "name": "tailscale",
+  "category": "Networking",
+  "description": "Zero-config VPN that creates a secure mesh network among all your devices.",
+  "icon": "templates/tailscale/icon.svg",
+  "image": "tailscale/tailscale:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/tailscale/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "TS_AUTHKEY",
+      "label": "Auth Key",
+      "description": "Tailscale reusable or ephemeral authentication key",
+      "default": ""
+    },
+    {
+      "name": "TS_EXTRA_ARGS",
+      "label": "Extra Arguments",
+      "description": "Additional flags (e.g. --advertise-routes=192.168.1.0/24)",
+      "default": "--advertise-exit-node"
+    },
+    {
+      "name": "TS_STATE_DIR",
+      "label": "State Directory Path",
+      "description": "Host directory for persistent state",
+      "default": "./data/tailscale"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

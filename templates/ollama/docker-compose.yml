@@ -1,0 +1,11 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${DATA_PATH}:/root/.ollama

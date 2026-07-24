@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Valkey",
+  "name": "valkey",
+  "category": "Infrastructure",
+  "description": "High-performance open-source in-memory datastore (Redis fork).",
+  "icon": "templates/valkey/icon.svg",
+  "image": "valkey/valkey:8-alpine",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/valkey/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "VALKEY_PASSWORD",
+      "label": "Valkey Password",
+      "description": "Authentication password for Valkey server",
+      "default": "changeme123"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for data storage",
+      "default": "./data/valkey"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

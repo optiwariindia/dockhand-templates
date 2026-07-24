@@ -1,0 +1,13 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    container_name: filebrowser
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${DATA_PATH}:/srv
+      - ${DATABASE_PATH}:/database/filebrowser.db
+      - ${CONFIG_PATH}:/config/settings.json

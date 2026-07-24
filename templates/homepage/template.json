@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Homepage",
+  "name": "homepage",
+  "category": "Utilities",
+  "description": "A modern, secure, highly customizable application dashboard with integrations.",
+  "icon": "templates/homepage/icon.svg",
+  "image": "ghcr.io/gethomepage/homepage:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/dockhand-templates",
+    "stackfile": "templates/homepage/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "CONFIG_PATH",
+      "label": "Config Directory Path",
+      "description": "Host directory for settings.yaml, services.yaml, bookmarks.yaml",
+      "default": "./config/homepage"
+    },
+    {
+      "name": "PUID",
+      "label": "Process UID",
+      "description": "Process User ID",
+      "default": "1000"
+    },
+    {
+      "name": "PGID",
+      "label": "Process GID",
+      "description": "Process Group ID",
+      "default": "1000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}
