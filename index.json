@@ -8,11 +8,11 @@
       "name": "adguard-home",
       "category": "Networking",
       "description": "Network-wide software for blocking ads & tracking and controlling DNS requests.",
-      "icon": "templates/adguard-home/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/adguard-home/icon.svg",
       "image": "adguard/adguardhome:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/adguard-home/docker-compose.yml"
       },
       "env": [
@@ -43,11 +43,11 @@
       "name": "anythingllm",
       "category": "AI",
       "description": "All-in-one AI enterprise workspace for RAG, custom AI agents, and documents.",
-      "icon": "templates/anythingllm/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/anythingllm/icon.svg",
       "image": "mintplexlabs/anythingllm:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/anythingllm/docker-compose.yml"
       },
       "env": [
@@ -72,11 +72,11 @@
       "name": "beszel",
       "category": "Monitoring",
       "description": "Lightweight server monitoring hub with Docker statistics, alerts & charts.",
-      "icon": "templates/beszel/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/beszel/icon.svg",
       "image": "henrygd/beszel:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/beszel/docker-compose.yml"
       },
       "env": [
@@ -101,11 +101,11 @@
       "name": "caddy",
       "category": "Reverse Proxy",
       "description": "Powerful, enterprise-ready open-source web server with automatic HTTPS.",
-      "icon": "templates/caddy/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/caddy/icon.svg",
       "image": "caddy:2-alpine",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/caddy/docker-compose.yml"
       },
       "env": [
@@ -136,11 +136,11 @@
       "name": "dockge",
       "category": "Development",
       "description": "A slick, user-friendly & reactive self-hosted Docker Compose manager.",
-      "icon": "templates/dockge/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/dockge/icon.svg",
       "image": "louislam/dockge:1",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/dockge/docker-compose.yml"
       },
       "env": [
@@ -171,11 +171,11 @@
       "name": "dozzle",
       "category": "Utilities",
       "description": "Real-time log viewer for Docker containers in your browser.",
-      "icon": "templates/dozzle/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/dozzle/icon.svg",
       "image": "amir20/dozzle:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/dozzle/docker-compose.yml"
       },
       "env": [
@@ -200,11 +200,11 @@
       "name": "filebrowser",
       "category": "Utilities",
       "description": "Web-based file management interface to upload, edit, preview, and share files.",
-      "icon": "templates/filebrowser/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/filebrowser/icon.svg",
       "image": "filebrowser/filebrowser:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/filebrowser/docker-compose.yml"
       },
       "env": [
@@ -241,11 +241,11 @@
       "name": "forgejo",
       "category": "Development",
       "description": "Self-hosted lightweight software development platform driven by the community.",
-      "icon": "templates/forgejo/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/forgejo/icon.svg",
       "image": "codeberg.org/forgejo/forgejo:9",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/forgejo/docker-compose.yml"
       },
       "env": [
@@ -282,11 +282,11 @@
       "name": "gitea",
       "category": "Development",
       "description": "Painless self-hosted Git service written in Go.",
-      "icon": "templates/gitea/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gitea/icon.svg",
       "image": "gitea/gitea:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/gitea/docker-compose.yml"
       },
       "env": [
@@ -323,11 +323,11 @@
       "name": "grafana",
       "category": "Monitoring",
       "description": "The open and composable observability and data visualization platform.",
-      "icon": "templates/grafana/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/grafana/icon.svg",
       "image": "grafana/grafana:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/grafana/docker-compose.yml"
       },
       "env": [
@@ -364,11 +364,11 @@
       "name": "headscale",
       "category": "Networking",
       "description": "Open-source, self-hosted implementation of the Tailscale control server.",
-      "icon": "templates/headscale/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/headscale/icon.svg",
       "image": "headscale/headscale:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/headscale/docker-compose.yml"
       },
       "env": [
@@ -399,11 +399,11 @@
       "name": "homepage",
       "category": "Utilities",
       "description": "A modern, secure, highly customizable application dashboard with integrations.",
-      "icon": "templates/homepage/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/homepage/icon.svg",
       "image": "ghcr.io/gethomepage/homepage:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/homepage/docker-compose.yml"
       },
       "env": [
@@ -440,11 +440,11 @@
       "name": "litellm",
       "category": "AI",
       "description": "Unified I/O proxy for 100+ LLM APIs with load balancing & tracking.",
-      "icon": "templates/litellm/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/litellm/icon.svg",
       "image": "ghcr.io/berriai/litellm:main-latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/litellm/docker-compose.yml"
       },
       "env": [
@@ -475,11 +475,11 @@
       "name": "loki",
       "category": "Monitoring",
       "description": "Like Prometheus, but for logs. High performance log aggregation system.",
-      "icon": "templates/loki/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/loki/icon.svg",
       "image": "grafana/loki:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/loki/docker-compose.yml"
       },
       "env": [
@@ -504,11 +504,11 @@
       "name": "mariadb",
       "category": "Infrastructure",
       "description": "Fast, scalable, open-source relational database management system.",
-      "icon": "templates/mariadb/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mariadb/icon.svg",
       "image": "mariadb:11",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/mariadb/docker-compose.yml"
       },
       "env": [
@@ -557,11 +557,11 @@
       "name": "minio",
       "category": "Infrastructure",
       "description": "High-performance S3-compatible object storage server.",
-      "icon": "templates/minio/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/minio/icon.svg",
       "image": "minio/minio:RELEASE.2024-11-07T00-52-20Z",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/minio/docker-compose.yml"
       },
       "env": [
@@ -598,11 +598,11 @@
       "name": "mongodb",
       "category": "Infrastructure",
       "description": "High-performance document-oriented NoSQL database server.",
-      "icon": "templates/mongodb/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mongodb/icon.svg",
       "image": "mongo:8",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/mongodb/docker-compose.yml"
       },
       "env": [
@@ -639,11 +639,11 @@
       "name": "mysql",
       "category": "Infrastructure",
       "description": "World's most popular open-source relational database system.",
-      "icon": "templates/mysql/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mysql/icon.svg",
       "image": "mysql:8.4",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/mysql/docker-compose.yml"
       },
       "env": [
@@ -692,11 +692,11 @@
       "name": "nats",
       "category": "Infrastructure",
       "description": "Cloud-native microservices messaging system and JetStream persistence engine.",
-      "icon": "templates/nats/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/nats/icon.svg",
       "image": "nats:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/nats/docker-compose.yml"
       },
       "env": [
@@ -721,11 +721,11 @@
       "name": "nginx-proxy-manager",
       "category": "Reverse Proxy",
       "description": "Intuitive web interface for NGINX proxying with free SSL certificates.",
-      "icon": "templates/nginx-proxy-manager/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/nginx-proxy-manager/icon.svg",
       "image": "jc21/nginx-proxy-manager:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/nginx-proxy-manager/docker-compose.yml"
       },
       "env": [
@@ -756,11 +756,11 @@
       "name": "ollama",
       "category": "AI",
       "description": "Get up and running with Llama 3, Mistral, Gemma, and other LLMs locally.",
-      "icon": "templates/ollama/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/ollama/icon.svg",
       "image": "ollama/ollama:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/ollama/docker-compose.yml"
       },
       "env": [
@@ -785,11 +785,11 @@
       "name": "open-webui",
       "category": "AI",
       "description": "User-friendly WebUI for Ollama, OpenAI, and custom LLM inference endpoints.",
-      "icon": "templates/open-webui/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/open-webui/icon.svg",
       "image": "ghcr.io/open-webui/open-webui:main",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/open-webui/docker-compose.yml"
       },
       "env": [
@@ -826,11 +826,11 @@
       "name": "pi-hole",
       "category": "Networking",
       "description": "DNS sinkhole that protects your devices from unwanted content without extra software.",
-      "icon": "templates/pi-hole/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pi-hole/icon.svg",
       "image": "pihole/pihole:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/pi-hole/docker-compose.yml"
       },
       "env": [
@@ -867,11 +867,11 @@
       "name": "portainer",
       "category": "Development",
       "description": "Making Docker & Kubernetes management easy with a modern Web UI.",
-      "icon": "templates/portainer/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/portainer/icon.svg",
       "image": "portainer/portainer-ce:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/portainer/docker-compose.yml"
       },
       "env": [
@@ -896,11 +896,11 @@
       "name": "postgresql",
       "category": "Infrastructure",
       "description": "Powerful, open-source object-relational database system.",
-      "icon": "templates/postgresql/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/postgresql/icon.svg",
       "image": "postgres:17-alpine",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/postgresql/docker-compose.yml"
       },
       "env": [
@@ -943,11 +943,11 @@
       "name": "prometheus",
       "category": "Monitoring",
       "description": "Open-source monitoring system and time-series database.",
-      "icon": "templates/prometheus/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/prometheus/icon.svg",
       "image": "prom/prometheus:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/prometheus/docker-compose.yml"
       },
       "env": [
@@ -978,11 +978,11 @@
       "name": "rabbitmq",
       "category": "Infrastructure",
       "description": "Robust, widely deployed open-source message broker.",
-      "icon": "templates/rabbitmq/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/rabbitmq/icon.svg",
       "image": "rabbitmq:3-management-alpine",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/rabbitmq/docker-compose.yml"
       },
       "env": [
@@ -1019,11 +1019,11 @@
       "name": "redis",
       "category": "Infrastructure",
       "description": "In-memory data structure store used as database, cache, and message broker.",
-      "icon": "templates/redis/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/redis/icon.svg",
       "image": "redis:7-alpine",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/redis/docker-compose.yml"
       },
       "env": [
@@ -1054,11 +1054,11 @@
       "name": "registry-ui",
       "category": "Development",
       "description": "User interface for private Docker registries to search and manage container tags.",
-      "icon": "templates/registry-ui/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/registry-ui/icon.svg",
       "image": "joxit/docker-registry-ui:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/registry-ui/docker-compose.yml"
       },
       "env": [
@@ -1089,11 +1089,11 @@
       "name": "registry",
       "category": "Development",
       "description": "Stateless, highly scalable server application that stores and lets you distribute Docker images.",
-      "icon": "templates/registry/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/registry/icon.svg",
       "image": "registry:2",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/registry/docker-compose.yml"
       },
       "env": [
@@ -1118,11 +1118,11 @@
       "name": "searxng",
       "category": "AI",
       "description": "Privacy-respecting, hackable metasearch engine aggregator.",
-      "icon": "templates/searxng/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/searxng/icon.svg",
       "image": "searxng/searxng:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/searxng/docker-compose.yml"
       },
       "env": [
@@ -1153,11 +1153,11 @@
       "name": "stirling-pdf",
       "category": "Utilities",
       "description": "Robust, locally hosted web application that allows you to perform operations on PDF files.",
-      "icon": "templates/stirling-pdf/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/stirling-pdf/icon.svg",
       "image": "frooodle/s-pdf:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/stirling-pdf/docker-compose.yml"
       },
       "env": [
@@ -1188,11 +1188,11 @@
       "name": "tailscale",
       "category": "Networking",
       "description": "Zero-config VPN that creates a secure mesh network among all your devices.",
-      "icon": "templates/tailscale/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/tailscale/icon.svg",
       "image": "tailscale/tailscale:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/tailscale/docker-compose.yml"
       },
       "env": [
@@ -1229,11 +1229,11 @@
       "name": "traefik",
       "category": "Reverse Proxy",
       "description": "Cloud-native edge router and HTTP reverse proxy with auto-discovery.",
-      "icon": "templates/traefik/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/traefik/icon.svg",
       "image": "traefik:v3.1",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/traefik/docker-compose.yml"
       },
       "env": [
@@ -1258,11 +1258,11 @@
       "name": "uptime-kuma",
       "category": "Monitoring",
       "description": "A fancy, easy-to-use self-hosted monitoring tool.",
-      "icon": "templates/uptime-kuma/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uptime-kuma/icon.svg",
       "image": "louislam/uptime-kuma:1",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/uptime-kuma/docker-compose.yml"
       },
       "env": [
@@ -1287,11 +1287,11 @@
       "name": "valkey",
       "category": "Infrastructure",
       "description": "High-performance open-source in-memory datastore (Redis fork).",
-      "icon": "templates/valkey/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/valkey/icon.svg",
       "image": "valkey/valkey:8-alpine",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/valkey/docker-compose.yml"
       },
       "env": [
@@ -1322,11 +1322,11 @@
       "name": "vaultwarden",
       "category": "Utilities",
       "description": "Unofficial Bitwarden compatible server written in Rust, light on memory.",
-      "icon": "templates/vaultwarden/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/vaultwarden/icon.svg",
       "image": "vaultwarden/server:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/vaultwarden/docker-compose.yml"
       },
       "env": [
@@ -1357,11 +1357,11 @@
       "name": "watchtower",
       "category": "Utilities",
       "description": "Automated Docker container base image updater.",
-      "icon": "templates/watchtower/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/watchtower/icon.svg",
       "image": "containrrr/watchtower:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/watchtower/docker-compose.yml"
       },
       "env": [
@@ -1392,11 +1392,11 @@
       "name": "wireguard",
       "category": "Networking",
       "description": "Extremely simple yet fast and modern VPN server.",
-      "icon": "templates/wireguard/icon.svg",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/wireguard/icon.svg",
       "image": "lscr.io/linuxserver/wireguard:latest",
       "administrator_only": false,
       "repository": {
-        "url": "https://github.com/dockhand-templates",
+        "url": "https://github.com/optiwariindia/dockhand-templates",
         "stackfile": "templates/wireguard/docker-compose.yml"
       },
       "env": [

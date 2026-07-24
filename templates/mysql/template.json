@@ -5,11 +5,11 @@
   "name": "mysql",
   "category": "Infrastructure",
   "description": "World's most popular open-source relational database system.",
-  "icon": "templates/mysql/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mysql/icon.svg",
   "image": "mysql:8.4",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/mysql/docker-compose.yml"
   },
   "env": [

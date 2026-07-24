@@ -5,11 +5,11 @@
   "name": "registry-ui",
   "category": "Development",
   "description": "User interface for private Docker registries to search and manage container tags.",
-  "icon": "templates/registry-ui/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/registry-ui/icon.svg",
   "image": "joxit/docker-registry-ui:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/registry-ui/docker-compose.yml"
   },
   "env": [

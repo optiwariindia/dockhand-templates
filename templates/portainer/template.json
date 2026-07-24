@@ -5,11 +5,11 @@
   "name": "portainer",
   "category": "Development",
   "description": "Making Docker & Kubernetes management easy with a modern Web UI.",
-  "icon": "templates/portainer/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/portainer/icon.svg",
   "image": "portainer/portainer-ce:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/portainer/docker-compose.yml"
   },
   "env": [

@@ -5,11 +5,11 @@
   "name": "open-webui",
   "category": "AI",
   "description": "User-friendly WebUI for Ollama, OpenAI, and custom LLM inference endpoints.",
-  "icon": "templates/open-webui/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/open-webui/icon.svg",
   "image": "ghcr.io/open-webui/open-webui:main",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/open-webui/docker-compose.yml"
   },
   "env": [

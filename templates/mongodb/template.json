@@ -5,11 +5,11 @@
   "name": "mongodb",
   "category": "Infrastructure",
   "description": "High-performance document-oriented NoSQL database server.",
-  "icon": "templates/mongodb/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mongodb/icon.svg",
   "image": "mongo:8",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/mongodb/docker-compose.yml"
   },
   "env": [

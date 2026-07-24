@@ -5,11 +5,11 @@
   "name": "dozzle",
   "category": "Utilities",
   "description": "Real-time log viewer for Docker containers in your browser.",
-  "icon": "templates/dozzle/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/dozzle/icon.svg",
   "image": "amir20/dozzle:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/dozzle/docker-compose.yml"
   },
   "env": [

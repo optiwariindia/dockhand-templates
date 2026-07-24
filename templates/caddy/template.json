@@ -5,11 +5,11 @@
   "name": "caddy",
   "category": "Reverse Proxy",
   "description": "Powerful, enterprise-ready open-source web server with automatic HTTPS.",
-  "icon": "templates/caddy/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/caddy/icon.svg",
   "image": "caddy:2-alpine",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/caddy/docker-compose.yml"
   },
   "env": [

@@ -5,11 +5,11 @@
   "name": "gitea",
   "category": "Development",
   "description": "Painless self-hosted Git service written in Go.",
-  "icon": "templates/gitea/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gitea/icon.svg",
   "image": "gitea/gitea:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/gitea/docker-compose.yml"
   },
   "env": [

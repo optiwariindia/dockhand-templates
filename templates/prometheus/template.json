@@ -5,11 +5,11 @@
   "name": "prometheus",
   "category": "Monitoring",
   "description": "Open-source monitoring system and time-series database.",
-  "icon": "templates/prometheus/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/prometheus/icon.svg",
   "image": "prom/prometheus:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/prometheus/docker-compose.yml"
   },
   "env": [

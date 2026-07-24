@@ -5,11 +5,11 @@
   "name": "traefik",
   "category": "Reverse Proxy",
   "description": "Cloud-native edge router and HTTP reverse proxy with auto-discovery.",
-  "icon": "templates/traefik/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/traefik/icon.svg",
   "image": "traefik:v3.1",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/traefik/docker-compose.yml"
   },
   "env": [

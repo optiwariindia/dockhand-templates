@@ -5,11 +5,11 @@
   "name": "registry",
   "category": "Development",
   "description": "Stateless, highly scalable server application that stores and lets you distribute Docker images.",
-  "icon": "templates/registry/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/registry/icon.svg",
   "image": "registry:2",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/registry/docker-compose.yml"
   },
   "env": [

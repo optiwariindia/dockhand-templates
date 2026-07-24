@@ -5,11 +5,11 @@
   "name": "stirling-pdf",
   "category": "Utilities",
   "description": "Robust, locally hosted web application that allows you to perform operations on PDF files.",
-  "icon": "templates/stirling-pdf/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/stirling-pdf/icon.svg",
   "image": "frooodle/s-pdf:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/stirling-pdf/docker-compose.yml"
   },
   "env": [

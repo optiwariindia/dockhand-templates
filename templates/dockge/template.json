@@ -5,11 +5,11 @@
   "name": "dockge",
   "category": "Development",
   "description": "A slick, user-friendly & reactive self-hosted Docker Compose manager.",
-  "icon": "templates/dockge/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/dockge/icon.svg",
   "image": "louislam/dockge:1",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/dockge/docker-compose.yml"
   },
   "env": [

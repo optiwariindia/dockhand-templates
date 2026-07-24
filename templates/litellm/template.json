@@ -5,11 +5,11 @@
   "name": "litellm",
   "category": "AI",
   "description": "Unified I/O proxy for 100+ LLM APIs with load balancing & tracking.",
-  "icon": "templates/litellm/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/litellm/icon.svg",
   "image": "ghcr.io/berriai/litellm:main-latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/litellm/docker-compose.yml"
   },
   "env": [

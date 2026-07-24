@@ -5,11 +5,11 @@
   "name": "rabbitmq",
   "category": "Infrastructure",
   "description": "Robust, widely deployed open-source message broker.",
-  "icon": "templates/rabbitmq/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/rabbitmq/icon.svg",
   "image": "rabbitmq:3-management-alpine",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/rabbitmq/docker-compose.yml"
   },
   "env": [

@@ -5,11 +5,11 @@
   "name": "valkey",
   "category": "Infrastructure",
   "description": "High-performance open-source in-memory datastore (Redis fork).",
-  "icon": "templates/valkey/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/valkey/icon.svg",
   "image": "valkey/valkey:8-alpine",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/valkey/docker-compose.yml"
   },
   "env": [

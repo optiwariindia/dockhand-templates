@@ -5,11 +5,11 @@
   "name": "beszel",
   "category": "Monitoring",
   "description": "Lightweight server monitoring hub with Docker statistics, alerts & charts.",
-  "icon": "templates/beszel/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/beszel/icon.svg",
   "image": "henrygd/beszel:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/beszel/docker-compose.yml"
   },
   "env": [

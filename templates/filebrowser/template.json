@@ -5,11 +5,11 @@
   "name": "filebrowser",
   "category": "Utilities",
   "description": "Web-based file management interface to upload, edit, preview, and share files.",
-  "icon": "templates/filebrowser/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/filebrowser/icon.svg",
   "image": "filebrowser/filebrowser:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/filebrowser/docker-compose.yml"
   },
   "env": [

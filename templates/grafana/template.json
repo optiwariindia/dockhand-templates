@@ -5,11 +5,11 @@
   "name": "grafana",
   "category": "Monitoring",
   "description": "The open and composable observability and data visualization platform.",
-  "icon": "templates/grafana/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/grafana/icon.svg",
   "image": "grafana/grafana:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/grafana/docker-compose.yml"
   },
   "env": [

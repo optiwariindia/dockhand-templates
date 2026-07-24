@@ -5,11 +5,11 @@
   "name": "forgejo",
   "category": "Development",
   "description": "Self-hosted lightweight software development platform driven by the community.",
-  "icon": "templates/forgejo/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/forgejo/icon.svg",
   "image": "codeberg.org/forgejo/forgejo:9",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/forgejo/docker-compose.yml"
   },
   "env": [

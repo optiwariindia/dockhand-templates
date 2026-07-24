@@ -5,11 +5,11 @@
   "name": "homepage",
   "category": "Utilities",
   "description": "A modern, secure, highly customizable application dashboard with integrations.",
-  "icon": "templates/homepage/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/homepage/icon.svg",
   "image": "ghcr.io/gethomepage/homepage:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/homepage/docker-compose.yml"
   },
   "env": [

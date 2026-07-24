@@ -5,11 +5,11 @@
   "name": "vaultwarden",
   "category": "Utilities",
   "description": "Unofficial Bitwarden compatible server written in Rust, light on memory.",
-  "icon": "templates/vaultwarden/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/vaultwarden/icon.svg",
   "image": "vaultwarden/server:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/vaultwarden/docker-compose.yml"
   },
   "env": [

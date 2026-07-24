@@ -5,11 +5,11 @@
   "name": "uptime-kuma",
   "category": "Monitoring",
   "description": "A fancy, easy-to-use self-hosted monitoring tool.",
-  "icon": "templates/uptime-kuma/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uptime-kuma/icon.svg",
   "image": "louislam/uptime-kuma:1",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/uptime-kuma/docker-compose.yml"
   },
   "env": [

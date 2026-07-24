@@ -5,11 +5,11 @@
   "name": "tailscale",
   "category": "Networking",
   "description": "Zero-config VPN that creates a secure mesh network among all your devices.",
-  "icon": "templates/tailscale/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/tailscale/icon.svg",
   "image": "tailscale/tailscale:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/tailscale/docker-compose.yml"
   },
   "env": [

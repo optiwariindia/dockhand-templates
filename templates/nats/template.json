@@ -5,11 +5,11 @@
   "name": "nats",
   "category": "Infrastructure",
   "description": "Cloud-native microservices messaging system and JetStream persistence engine.",
-  "icon": "templates/nats/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/nats/icon.svg",
   "image": "nats:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/nats/docker-compose.yml"
   },
   "env": [

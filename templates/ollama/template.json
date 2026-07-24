@@ -5,11 +5,11 @@
   "name": "ollama",
   "category": "AI",
   "description": "Get up and running with Llama 3, Mistral, Gemma, and other LLMs locally.",
-  "icon": "templates/ollama/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/ollama/icon.svg",
   "image": "ollama/ollama:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/ollama/docker-compose.yml"
   },
   "env": [

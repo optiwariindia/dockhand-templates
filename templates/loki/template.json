@@ -5,11 +5,11 @@
   "name": "loki",
   "category": "Monitoring",
   "description": "Like Prometheus, but for logs. High performance log aggregation system.",
-  "icon": "templates/loki/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/loki/icon.svg",
   "image": "grafana/loki:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/loki/docker-compose.yml"
   },
   "env": [

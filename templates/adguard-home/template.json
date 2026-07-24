@@ -5,11 +5,11 @@
   "name": "adguard-home",
   "category": "Networking",
   "description": "Network-wide software for blocking ads & tracking and controlling DNS requests.",
-  "icon": "templates/adguard-home/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/adguard-home/icon.svg",
   "image": "adguard/adguardhome:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/adguard-home/docker-compose.yml"
   },
   "env": [

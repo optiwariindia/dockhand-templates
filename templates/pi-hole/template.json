@@ -5,11 +5,11 @@
   "name": "pi-hole",
   "category": "Networking",
   "description": "DNS sinkhole that protects your devices from unwanted content without extra software.",
-  "icon": "templates/pi-hole/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pi-hole/icon.svg",
   "image": "pihole/pihole:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/pi-hole/docker-compose.yml"
   },
   "env": [

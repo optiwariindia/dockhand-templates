@@ -5,11 +5,11 @@
   "name": "watchtower",
   "category": "Utilities",
   "description": "Automated Docker container base image updater.",
-  "icon": "templates/watchtower/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/watchtower/icon.svg",
   "image": "containrrr/watchtower:latest",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/watchtower/docker-compose.yml"
   },
   "env": [

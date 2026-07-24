@@ -5,11 +5,11 @@
   "name": "postgresql",
   "category": "Infrastructure",
   "description": "Powerful, open-source object-relational database system.",
-  "icon": "templates/postgresql/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/postgresql/icon.svg",
   "image": "postgres:17-alpine",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/postgresql/docker-compose.yml"
   },
   "env": [

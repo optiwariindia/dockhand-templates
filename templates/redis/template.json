@@ -5,11 +5,11 @@
   "name": "redis",
   "category": "Infrastructure",
   "description": "In-memory data structure store used as database, cache, and message broker.",
-  "icon": "templates/redis/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/redis/icon.svg",
   "image": "redis:7-alpine",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/redis/docker-compose.yml"
   },
   "env": [

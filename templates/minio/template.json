@@ -5,11 +5,11 @@
   "name": "minio",
   "category": "Infrastructure",
   "description": "High-performance S3-compatible object storage server.",
-  "icon": "templates/minio/icon.svg",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/minio/icon.svg",
   "image": "minio/minio:RELEASE.2024-11-07T00-52-20Z",
   "administrator_only": false,
   "repository": {
-    "url": "https://github.com/dockhand-templates",
+    "url": "https://github.com/optiwariindia/dockhand-templates",
     "stackfile": "templates/minio/docker-compose.yml"
   },
   "env": [
