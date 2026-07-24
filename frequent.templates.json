@@ -1,0 +1,52 @@
+{
+    "version": 2,
+    "templates": [
+        {
+            "type": 3,
+            "title": "Frequent Attendance",
+            "name": "hrms",
+            "categories": [
+                "hr",
+                "timesheet",
+                "attendance"
+            ],
+            "category": "Application",
+            "description": "A web based attendance management portal.",
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "logo": "https://www.frequentresearch.com/favicon.ico",
+            "icon": "https://www.frequentresearch.com/favicon.ico",
+            "administrator_only": false,
+            "repository": {
+                "url": "https://github.com/optiwariindia/dockhand-templates",
+                "stackfile": "templates/attendance/docker-compose.yml"
+            },
+            "env": [
+                {
+                    "name": "PORT",
+                    "label": "Default Http Port",
+                    "description": "Internal access port, (shall be required for setting up proxy manager)",
+                    "default": 3000
+                },
+                {
+                    "name": "TZ",
+                    "label": "Default Timezone",
+                    "description": "Default timezone (default: UTC)",
+                    "default": "UTC"
+                },
+                {
+                    "name": "DB",
+                    "label": "Default Database",
+                    "description": "Default Database (default: UTC)",
+                    "default": "UTC"
+                },
+                {
+                    "name":"JWT_SECRET",
+                    "label":"Default JWT",
+                    "description":"A web based attendance management portal.",
+                    "default":"8e2a8ad9aa0f57a3f8dd7ddda64da43745ee88dec1877a12bc639894937ac600b70721aa431ce6c778bc640b04fbfaecf8fdc68bfa989fb138bff5bfde2f647c"
+                }
+            ]
+        }
+    ]
+}
