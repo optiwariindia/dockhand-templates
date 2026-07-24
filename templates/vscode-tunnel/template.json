@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "VS Code Tunnel (Om Prakash Tiwari)",
   "name": "vscode-tunnel",
+  "categories": [
+    "Development"
+  ],
   "category": "Development",
   "description": "VS Code Tunnel server container for remote, secure web-based IDE access.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/vscode-tunnel/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/vscode-tunnel/icon.svg",
   "image": "optiwariindia/vscode-tunnel:latest",
   "administrator_only": false,

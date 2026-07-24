@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Pi-hole",
   "name": "pi-hole",
+  "categories": [
+    "Networking"
+  ],
   "category": "Networking",
   "description": "DNS sinkhole that protects your devices from unwanted content without extra software.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pi-hole/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pi-hole/icon.svg",
   "image": "pihole/pihole:latest",
   "administrator_only": false,

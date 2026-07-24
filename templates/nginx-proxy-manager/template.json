@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "NGINX Proxy Manager",
   "name": "nginx-proxy-manager",
+  "categories": [
+    "Reverse Proxy"
+  ],
   "category": "Reverse Proxy",
   "description": "Intuitive web interface for NGINX proxying with free SSL certificates.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/nginx-proxy-manager/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/nginx-proxy-manager/icon.svg",
   "image": "jc21/nginx-proxy-manager:latest",
   "administrator_only": false,

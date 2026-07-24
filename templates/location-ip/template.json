@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Location IP API (Om Prakash Tiwari)",
   "name": "location-ip",
+  "categories": [
+    "Microservices"
+  ],
   "category": "Microservices",
   "description": "API microservice providing country code and IP Address of host using Whois lookup.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/location-ip/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/location-ip/icon.svg",
   "image": "optiwariindia/location-ip:latest",
   "administrator_only": false,

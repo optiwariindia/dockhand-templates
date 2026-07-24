@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Email Validator API (Om Prakash Tiwari)",
   "name": "email-validator",
+  "categories": [
+    "Microservices"
+  ],
   "category": "Microservices",
   "description": "Email syntax, MX record, and mailbox deliverability checking API.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-validator/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-validator/icon.svg",
   "image": "optiwariindia/email-validator:latest",
   "administrator_only": false,

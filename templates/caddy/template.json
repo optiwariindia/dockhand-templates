@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Caddy",
   "name": "caddy",
+  "categories": [
+    "Reverse Proxy"
+  ],
   "category": "Reverse Proxy",
   "description": "Powerful, enterprise-ready open-source web server with automatic HTTPS.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/caddy/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/caddy/icon.svg",
   "image": "caddy:2-alpine",
   "administrator_only": false,

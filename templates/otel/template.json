@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "OpenTelemetry Collector (Om Prakash Tiwari)",
   "name": "otel",
+  "categories": [
+    "Monitoring"
+  ],
   "category": "Monitoring",
   "description": "OpenTelemetry Collector container for metrics, logs, and traces pipeline.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/otel/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/otel/icon.svg",
   "image": "optiwariindia/otel:latest",
   "administrator_only": false,

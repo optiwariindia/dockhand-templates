@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Redis",
   "name": "redis",
+  "categories": [
+    "Infrastructure"
+  ],
   "category": "Infrastructure",
   "description": "In-memory data structure store used as database, cache, and message broker.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/redis/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/redis/icon.svg",
   "image": "redis:7-alpine",
   "administrator_only": false,

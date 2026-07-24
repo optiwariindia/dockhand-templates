@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Coming Soon Server (Om Prakash Tiwari)",
   "name": "commingsoon",
+  "categories": [
+    "Utilities"
+  ],
   "category": "Utilities",
   "description": "Lightweight Coming Soon / Maintenance page web server.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/commingsoon/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/commingsoon/icon.svg",
   "image": "optiwariindia/commingsoon:latest",
   "administrator_only": false,

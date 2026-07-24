@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Transcoder API (Om Prakash Tiwari)",
   "name": "transcoder",
+  "categories": [
+    "Utilities"
+  ],
   "category": "Utilities",
   "description": "High-speed video and audio media transcoding microservice.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/transcoder/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/transcoder/icon.svg",
   "image": "optiwariindia/transcoder:latest",
   "administrator_only": false,

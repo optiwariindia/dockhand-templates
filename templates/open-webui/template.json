@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Open WebUI",
   "name": "open-webui",
+  "categories": [
+    "AI"
+  ],
   "category": "AI",
   "description": "User-friendly WebUI for Ollama, OpenAI, and custom LLM inference endpoints.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/open-webui/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/open-webui/icon.svg",
   "image": "ghcr.io/open-webui/open-webui:main",
   "administrator_only": false,

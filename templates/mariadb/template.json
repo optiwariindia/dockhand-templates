@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "MariaDB",
   "name": "mariadb",
+  "categories": [
+    "Infrastructure"
+  ],
   "category": "Infrastructure",
   "description": "Fast, scalable, open-source relational database management system.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mariadb/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mariadb/icon.svg",
   "image": "mariadb:11",
   "administrator_only": false,

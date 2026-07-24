@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Get-PTR Resolver (Om Prakash Tiwari)",
   "name": "get-ptr",
+  "categories": [
+    "Utilities"
+  ],
   "category": "Utilities",
   "description": "Reverse DNS (PTR record) lookup microservice.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/get-ptr/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/get-ptr/icon.svg",
   "image": "optiwariindia/get-ptr:latest",
   "administrator_only": false,

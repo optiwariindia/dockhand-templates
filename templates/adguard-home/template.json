@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "AdGuard Home",
   "name": "adguard-home",
+  "categories": [
+    "Networking"
+  ],
   "category": "Networking",
   "description": "Network-wide software for blocking ads & tracking and controlling DNS requests.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/adguard-home/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/adguard-home/icon.svg",
   "image": "adguard/adguardhome:latest",
   "administrator_only": false,

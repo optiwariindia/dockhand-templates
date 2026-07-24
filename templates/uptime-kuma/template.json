@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Uptime Kuma",
   "name": "uptime-kuma",
+  "categories": [
+    "Monitoring"
+  ],
   "category": "Monitoring",
   "description": "A fancy, easy-to-use self-hosted monitoring tool.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uptime-kuma/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uptime-kuma/icon.svg",
   "image": "louislam/uptime-kuma:1",
   "administrator_only": false,

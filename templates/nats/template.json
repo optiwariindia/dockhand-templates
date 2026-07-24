@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "NATS",
   "name": "nats",
+  "categories": [
+    "Infrastructure"
+  ],
   "category": "Infrastructure",
   "description": "Cloud-native microservices messaging system and JetStream persistence engine.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/nats/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/nats/icon.svg",
   "image": "nats:latest",
   "administrator_only": false,

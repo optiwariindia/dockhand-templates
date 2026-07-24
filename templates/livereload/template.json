@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "LiveReload Server (Om Prakash Tiwari)",
   "name": "livereload",
+  "categories": [
+    "Development"
+  ],
   "category": "Development",
   "description": "LiveReload server for automatically reloading browsers on file changes in Docker.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/livereload/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/livereload/icon.svg",
   "image": "optiwariindia/livereload:latest",
   "administrator_only": false,

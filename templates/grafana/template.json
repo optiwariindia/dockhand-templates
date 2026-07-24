@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Grafana",
   "name": "grafana",
+  "categories": [
+    "Monitoring"
+  ],
   "category": "Monitoring",
   "description": "The open and composable observability and data visualization platform.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/grafana/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/grafana/icon.svg",
   "image": "grafana/grafana:latest",
   "administrator_only": false,

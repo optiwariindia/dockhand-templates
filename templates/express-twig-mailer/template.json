@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Express Twig Mailer (Om Prakash Tiwari)",
   "name": "express-twig-mailer",
+  "categories": [
+    "Microservices"
+  ],
   "category": "Microservices",
   "description": "Express.js & Twig email dispatch microservice with SMTP support.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/express-twig-mailer/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/express-twig-mailer/icon.svg",
   "image": "optiwariindia/express-twig-mailer:latest",
   "administrator_only": false,

@@ -8,18 +8,23 @@ Welcome to the official **Dockhand Template Repository**. This collection provid
 
 ---
 
-## 🚀 How to Use in Dockhand
+## 🚀 How to Use in Dockhand / Portainer
 
 ### Method 1: Adding as Custom App Template Catalog (Recommended)
 
-1. Open your **Dockhand** Web UI.
+1. Open your **Dockhand** or **Portainer** Web UI.
 2. Navigate to **Settings** -> **App Templates** (or **App Catalog**).
-3. Set the **URL** input to:
-   ```text
-   https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/index.json
-   ```
+3. Set the **URL** input to either of the following raw GitHub JSON URLs:
+   - **`index.json` (Primary):**
+     ```text
+     https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/index.json
+     ```
+   - **`templates.json` (Alternative):**
+     ```text
+     https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates.json
+     ```
 4. Click **Save** or **Fetch Templates**.
-5. Go to the **Templates** section in Dockhand to instantly browse, search, and deploy any of the **69 templates** with pre-filled forms.
+5. Go to the **Templates** section in Dockhand/Portainer to instantly browse, search, and deploy any of the **69 templates** with pre-filled forms.
 
 ---
 
@@ -39,7 +44,8 @@ If you want to deploy a single application stack directly in Dockhand:
 ```text
 dockhand-templates/
 ├── index.json                 # Global Portainer v2 / Dockhand template catalog
-├── build_index.py             # Python compiler script for index.json
+├── templates.json             # Alias template catalog for Portainer/Dockhand compatibility
+├── build_index.py             # Python compiler script for catalog indexes
 ├── templates/                 # Modular template directory
 │   ├── mongodb/
 │   ├── vscode-tunnel/

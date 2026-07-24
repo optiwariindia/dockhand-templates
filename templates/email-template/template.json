@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Email Template Service (Om Prakash Tiwari)",
   "name": "email-template",
+  "categories": [
+    "Microservices"
+  ],
   "category": "Microservices",
   "description": "HTML Email Template rendering and live preview server.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-template/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-template/icon.svg",
   "image": "optiwariindia/email-template:latest",
   "administrator_only": false,

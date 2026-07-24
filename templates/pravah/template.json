@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Pravah Realtime Sync (Om Prakash Tiwari)",
   "name": "pravah",
+  "categories": [
+    "Microservices"
+  ],
   "category": "Microservices",
   "description": "Real-time event synchronization engine and broadcasting server.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah/icon.svg",
   "image": "optiwariindia/pravah:latest",
   "administrator_only": false,

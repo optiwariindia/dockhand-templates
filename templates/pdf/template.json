@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "PDF Generator (Om Prakash Tiwari)",
   "name": "pdf",
+  "categories": [
+    "Utilities"
+  ],
   "category": "Utilities",
   "description": "HTML-to-PDF rendering and document compilation microservice.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pdf/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pdf/icon.svg",
   "image": "optiwariindia/pdf:latest",
   "administrator_only": false,

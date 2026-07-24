@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Homepage",
   "name": "homepage",
+  "categories": [
+    "Utilities"
+  ],
   "category": "Utilities",
   "description": "A modern, secure, highly customizable application dashboard with integrations.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/homepage/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/homepage/icon.svg",
   "image": "ghcr.io/gethomepage/homepage:latest",
   "administrator_only": false,

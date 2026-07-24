@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "UUID Go Generator (Om Prakash Tiwari)",
   "name": "uuid-go",
+  "categories": [
+    "Microservices"
+  ],
   "category": "Microservices",
   "description": "High-throughput UUID generation microservice built in Go.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uuid-go/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uuid-go/icon.svg",
   "image": "optiwariindia/uuid-go:latest",
   "administrator_only": false,

@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Beszel",
   "name": "beszel",
+  "categories": [
+    "Monitoring"
+  ],
   "category": "Monitoring",
   "description": "Lightweight server monitoring hub with Docker statistics, alerts & charts.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/beszel/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/beszel/icon.svg",
   "image": "henrygd/beszel:latest",
   "administrator_only": false,

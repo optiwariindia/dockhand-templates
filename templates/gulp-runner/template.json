@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Gulp Runner (Om Prakash Tiwari)",
   "name": "gulp-runner",
+  "categories": [
+    "Development"
+  ],
   "category": "Development",
   "description": "Automated Gulp task runner environment for building frontend assets.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gulp-runner/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gulp-runner/icon.svg",
   "image": "optiwariindia/gulp-runner:latest",
   "administrator_only": false,

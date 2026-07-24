@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Gitea",
   "name": "gitea",
+  "categories": [
+    "Development"
+  ],
   "category": "Development",
   "description": "Painless self-hosted Git service written in Go.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gitea/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gitea/icon.svg",
   "image": "gitea/gitea:latest",
   "administrator_only": false,

@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "MongoDB",
   "name": "mongodb",
+  "categories": [
+    "Infrastructure"
+  ],
   "category": "Infrastructure",
   "description": "High-performance document-oriented NoSQL database server.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mongodb/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/mongodb/icon.svg",
   "image": "mongo:8",
   "administrator_only": false,

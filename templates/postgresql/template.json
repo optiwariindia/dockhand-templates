@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "PostgreSQL",
   "name": "postgresql",
+  "categories": [
+    "Infrastructure"
+  ],
   "category": "Infrastructure",
   "description": "Powerful, open-source object-relational database system.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/postgresql/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/postgresql/icon.svg",
   "image": "postgres:17-alpine",
   "administrator_only": false,

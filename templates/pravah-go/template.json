@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Pravah Go SSE Server (Om Prakash Tiwari)",
   "name": "pravah-go",
+  "categories": [
+    "Microservices"
+  ],
   "category": "Microservices",
   "description": "High-performance Server-Sent Events (SSE) server in Go to sync applications in real-time.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah-go/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah-go/icon.svg",
   "image": "optiwariindia/pravah-go:latest",
   "administrator_only": false,

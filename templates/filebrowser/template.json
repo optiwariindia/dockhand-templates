@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "FileBrowser",
   "name": "filebrowser",
+  "categories": [
+    "Utilities"
+  ],
   "category": "Utilities",
   "description": "Web-based file management interface to upload, edit, preview, and share files.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/filebrowser/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/filebrowser/icon.svg",
   "image": "filebrowser/filebrowser:latest",
   "administrator_only": false,

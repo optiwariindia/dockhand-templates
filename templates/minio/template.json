@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "MinIO",
   "name": "minio",
+  "categories": [
+    "Infrastructure"
+  ],
   "category": "Infrastructure",
   "description": "High-performance S3-compatible object storage server.",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/minio/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/minio/icon.svg",
   "image": "minio/minio:RELEASE.2024-11-07T00-52-20Z",
   "administrator_only": false,

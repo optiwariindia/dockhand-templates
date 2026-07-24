@@ -1,10 +1,15 @@
 {
-  "version": "2",
-  "type": 1,
+  "type": 3,
   "title": "Valkey",
   "name": "valkey",
+  "categories": [
+    "Infrastructure"
+  ],
   "category": "Infrastructure",
   "description": "High-performance open-source in-memory datastore (Redis fork).",
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "logo": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/valkey/icon.svg",
   "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/valkey/icon.svg",
   "image": "valkey/valkey:8-alpine",
   "administrator_only": false,
