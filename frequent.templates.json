@@ -14,8 +14,8 @@
             "description": "A web based attendance management portal.",
             "platform": "linux",
             "restart_policy": "unless-stopped",
-            "logo": "https://www.frequentresearch.com/favicon.ico",
-            "icon": "https://www.frequentresearch.com/favicon.ico",
+            "logo": "https://www.frequentresearch.com/assets/logo.png",
+            "icon": "https://www.frequentresearch.com/icon.png?icon.a9c218b8.png",
             "administrator_only": false,
             "repository": {
                 "url": "https://github.com/optiwariindia/dockhand-templates",
