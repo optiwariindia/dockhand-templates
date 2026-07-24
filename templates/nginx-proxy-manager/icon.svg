@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
   <defs>
-    <linearGradient id="grad_nginx-proxy-manager" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad_nginx_proxy_manager" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#009639" />
       <stop offset="100%" stop-color="#005520" />
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="24" fill="url(#grad_nginx-proxy-manager)" />
+  <rect width="128" height="128" rx="24" fill="url(#grad_nginx_proxy_manager)" />
   <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
     <path d="M64 12L16 36v56l48 24 48-24V36L64 12zm0 24l24 12v32L64 92 40 80V48l24-12z"/>
   </g>

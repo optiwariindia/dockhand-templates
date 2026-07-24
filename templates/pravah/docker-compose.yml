@@ -1,0 +1,10 @@
+services:
+  pravah:
+    image: optiwariindia/pravah:latest
+    container_name: pravah
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

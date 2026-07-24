@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Website Validator (Om Prakash Tiwari)",
+  "name": "validator-website",
+  "category": "Utilities",
+  "description": "Website availability, SSL validity, and status checking microservice.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/validator-website/icon.svg",
+  "image": "optiwariindia/validator-website:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/validator-website/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Server port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

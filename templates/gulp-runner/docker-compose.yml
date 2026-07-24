@@ -1,0 +1,9 @@
+services:
+  gulp-runner:
+    image: optiwariindia/gulp-runner:latest
+    container_name: gulp-runner
+    restart: unless-stopped
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${PROJECT_PATH}:/app

@@ -1,0 +1,10 @@
+services:
+  email-validator:
+    image: optiwariindia/email-validator:latest
+    container_name: email-validator
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

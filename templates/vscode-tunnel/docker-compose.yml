@@ -1,0 +1,12 @@
+services:
+  vscode-tunnel:
+    image: optiwariindia/vscode-tunnel:latest
+    container_name: vscode-tunnel
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      TUNNEL_NAME: ${TUNNEL_NAME}
+      TZ: ${TZ}
+    volumes:
+      - ${DATA_PATH}:/root

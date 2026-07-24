@@ -14,7 +14,7 @@ The open and composable observability and data visualization platform.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -66,7 +66,7 @@ grafana.example.com {
    ```bash
    docker stop grafana
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf grafana-backup-$(date +%F).tar.gz ./data/grafana
    ```
@@ -83,8 +83,5 @@ grafana.example.com {
    ```bash
    docker stop grafana && docker rm grafana
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf grafana-backup-YYYY-MM-DD.tar.gz -C ./data/grafana
-   ```
+2. Extract backup archive to `./data/grafana`.
 3. Redeploy the stack via Dockhand.

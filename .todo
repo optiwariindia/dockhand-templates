@@ -45,10 +45,14 @@
     - [x] Networking: Headscale, WireGuard, AdGuard Home, Pi-hole ✔ @done(26-07-24 16:02)
     - [x] Development: Portainer, Dockge, Forgejo, Registry UI ✔ @done(26-07-24 16:02)
 
-## Milestone 5: Indexing & Validation
-- Goal: Generate global index.json and validate all compose files, environment parameters, icons, and docs.
-  - User Story: As Lead Engineer Om Prakash Tiwari, I want a single validated index.json linking all templates for Dockhand.
-    - [x] Generate index.json with Portainer v2 / Dockhand format compatibility ✔ @done(26-07-24 16:02)
-    - [x] Validate docker-compose syntax and env variables across all templates ✔ @done(26-07-24 16:02)
-    - [x] Create timestamped session report in reports/ ✔ @done(26-07-24 16:02)
+## Milestone 5: Om Prakash Tiwari Custom Microservices Suite (30 Docker Hub Repositories)
+- Goal: Integrate all 30 custom docker images from optiwariindia/ Docker Hub account into Dockhand templates
+  - User Story: As Lead Engineer Om Prakash Tiwari, I want all my custom microservices accessible as one-click templates in Dockhand.
+    - [x] Add VS Code Tunnel, BizBandhan Trace RUM, Pravah Go, Pravah, Whatsmeow, ExRate API, Location IP, Address Options, SSH Honeypot, LiveReload, Transcoder, UUID Go, GetCN, Get-PTR, Email Validator, Validator Email, Website Validator, CAPTCHA, PDF Generator, Excel, Coming Soon, SSE Server, Email Template, Express Twig Mailer, API Gateway, OpenTelemetry Collector, React Server, Express, PHP, Gulp Runner ✔ @done(26-07-24 16:17)
 
+## Milestone 6: Indexing, Publishing & Git Sync
+- Goal: Generate global index.json with 69 templates and sync with GitHub
+  - User Story: As Lead Engineer Om Prakash Tiwari, I want all 69 templates indexed and published to GitHub.
+    - [x] Generate index.json with 69 templates ✔ @done(26-07-24 16:17)
+    - [x] Publish and push updates to optiwariindia/dockhand-templates on GitHub ✔ @done(26-07-24 16:17)
+    - [x] Create timestamped session report in reports/ ✔ @done(26-07-24 16:18)

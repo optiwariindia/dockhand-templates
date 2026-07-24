@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
   <defs>
-    <linearGradient id="grad_adguard-home" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad_adguard_home" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#67B279" />
       <stop offset="100%" stop-color="#266838" />
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="24" fill="url(#grad_adguard-home)" />
+  <rect width="128" height="128" rx="24" fill="url(#grad_adguard_home)" />
   <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
     <path d="M64 12L16 36v56l48 24 48-24V36L64 12zm-8 72L28 60l12-12 16 16 36-36 12 12-48 48z"/>
   </g>

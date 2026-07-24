@@ -14,7 +14,7 @@ User interface for private Docker registries to search and manage container tags
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -65,7 +65,7 @@ registry-ui.example.com {
    ```bash
    docker stop registry-ui
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf registry-ui-backup-$(date +%F).tar.gz ./data/registry-ui
    ```
@@ -82,8 +82,5 @@ registry-ui.example.com {
    ```bash
    docker stop registry-ui && docker rm registry-ui
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf registry-ui-backup-YYYY-MM-DD.tar.gz -C ./data/registry-ui
-   ```
+2. Extract backup archive to `./data/registry-ui`.
 3. Redeploy the stack via Dockhand.

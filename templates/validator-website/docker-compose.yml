@@ -1,0 +1,10 @@
+services:
+  validator-website:
+    image: optiwariindia/validator-website:latest
+    container_name: validator-website
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

@@ -1,0 +1,11 @@
+services:
+  optiwari-php:
+    image: optiwariindia/php:latest
+    container_name: optiwari-php
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${WEB_ROOT}:/var/www/html

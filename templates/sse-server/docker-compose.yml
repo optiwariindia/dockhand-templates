@@ -1,0 +1,10 @@
+services:
+  sse-server:
+    image: optiwariindia/sse-server:latest
+    container_name: sse-server
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

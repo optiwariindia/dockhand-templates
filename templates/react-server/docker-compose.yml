@@ -1,0 +1,11 @@
+services:
+  react-server:
+    image: optiwariindia/react-server:latest
+    container_name: react-server
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${PUBLIC_DIR}:/app/public

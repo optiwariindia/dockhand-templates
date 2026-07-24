@@ -1,0 +1,10 @@
+services:
+  getcn:
+    image: optiwariindia/getcn:latest
+    container_name: getcn
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

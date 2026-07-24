@@ -14,7 +14,7 @@ Painless self-hosted Git service written in Go.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -67,7 +67,7 @@ gitea.example.com {
    ```bash
    docker stop gitea
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf gitea-backup-$(date +%F).tar.gz ./data/gitea
    ```
@@ -84,8 +84,5 @@ gitea.example.com {
    ```bash
    docker stop gitea && docker rm gitea
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf gitea-backup-YYYY-MM-DD.tar.gz -C ./data/gitea
-   ```
+2. Extract backup archive to `./data/gitea`.
 3. Redeploy the stack via Dockhand.

@@ -1,0 +1,11 @@
+services:
+  transcoder:
+    image: optiwariindia/transcoder:latest
+    container_name: transcoder
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${DATA_PATH}:/app/transcode

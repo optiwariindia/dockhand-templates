@@ -1,0 +1,12 @@
+services:
+  bizbandhan-trace:
+    image: optiwariindia/bizbandhan-trace:latest
+    container_name: bizbandhan-trace
+    restart: unless-stopped
+    ports:
+      - "4318:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}
+    volumes:
+      - ${DATA_PATH}:/app/data

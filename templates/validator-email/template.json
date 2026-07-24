@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Validator Email Service (Om Prakash Tiwari)",
+  "name": "validator-email",
+  "category": "Microservices",
+  "description": "High-throughput email validation and format verification microservice.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/validator-email/icon.svg",
+  "image": "optiwariindia/validator-email:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/validator-email/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Server listening port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

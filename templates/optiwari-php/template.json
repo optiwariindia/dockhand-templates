@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "PHP Environment (Om Prakash Tiwari)",
+  "name": "optiwari-php",
+  "category": "Development",
+  "description": "Custom PHP web application runtime container.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/optiwari-php/icon.svg",
+  "image": "optiwariindia/php:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/optiwari-php/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "WEB_ROOT",
+      "label": "Web Root Path",
+      "description": "Host path for PHP application code",
+      "default": "./data/php"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

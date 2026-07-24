@@ -1,0 +1,11 @@
+services:
+  exrate:
+    image: optiwariindia/exrate:latest
+    container_name: exrate
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      CACHE_TTL: ${CACHE_TTL}
+      TZ: ${TZ}

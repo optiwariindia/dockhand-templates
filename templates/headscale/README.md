@@ -14,7 +14,7 @@ Open-source, self-hosted implementation of the Tailscale control server.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -66,7 +66,7 @@ headscale.example.com {
    ```bash
    docker stop headscale
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf headscale-backup-$(date +%F).tar.gz ./data/headscale
    ```
@@ -83,8 +83,5 @@ headscale.example.com {
    ```bash
    docker stop headscale && docker rm headscale
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf headscale-backup-YYYY-MM-DD.tar.gz -C ./data/headscale
-   ```
+2. Extract backup archive to `./data/headscale`.
 3. Redeploy the stack via Dockhand.

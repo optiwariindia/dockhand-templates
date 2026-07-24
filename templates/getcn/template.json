@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "GetCN Inspector (Om Prakash Tiwari)",
+  "name": "getcn",
+  "category": "Utilities",
+  "description": "SSL Certificate inspector and Common Name (CN) extraction microservice.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/getcn/icon.svg",
+  "image": "optiwariindia/getcn:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/getcn/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Internal server port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

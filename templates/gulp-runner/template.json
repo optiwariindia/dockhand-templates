@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Gulp Runner (Om Prakash Tiwari)",
+  "name": "gulp-runner",
+  "category": "Development",
+  "description": "Automated Gulp task runner environment for building frontend assets.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gulp-runner/icon.svg",
+  "image": "optiwariindia/gulp-runner:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/gulp-runner/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PROJECT_PATH",
+      "label": "Project Directory Path",
+      "description": "Host directory containing Gulpfile.js and source files",
+      "default": "./data/gulp-project"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

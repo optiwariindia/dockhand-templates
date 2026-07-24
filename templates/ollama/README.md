@@ -14,7 +14,7 @@ Get up and running with Llama 3, Mistral, Gemma, and other LLMs locally.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -64,7 +64,7 @@ ollama.example.com {
    ```bash
    docker stop ollama
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf ollama-backup-$(date +%F).tar.gz ./data/ollama
    ```
@@ -81,8 +81,5 @@ ollama.example.com {
    ```bash
    docker stop ollama && docker rm ollama
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf ollama-backup-YYYY-MM-DD.tar.gz -C ./data/ollama
-   ```
+2. Extract backup archive to `./data/ollama`.
 3. Redeploy the stack via Dockhand.

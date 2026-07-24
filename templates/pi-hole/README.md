@@ -14,7 +14,7 @@ DNS sinkhole that protects your devices from unwanted content without extra soft
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -68,7 +68,7 @@ pi-hole.example.com {
    ```bash
    docker stop pi-hole
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf pi-hole-backup-$(date +%F).tar.gz ./data/pi-hole
    ```
@@ -85,8 +85,5 @@ pi-hole.example.com {
    ```bash
    docker stop pi-hole && docker rm pi-hole
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf pi-hole-backup-YYYY-MM-DD.tar.gz -C ./data/pi-hole
-   ```
+2. Extract backup archive to `./data/pi-hole`.
 3. Redeploy the stack via Dockhand.

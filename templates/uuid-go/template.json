@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "UUID Go Generator (Om Prakash Tiwari)",
+  "name": "uuid-go",
+  "category": "Microservices",
+  "description": "High-throughput UUID generation microservice built in Go.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uuid-go/icon.svg",
+  "image": "optiwariindia/uuid-go:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/uuid-go/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Application port",
+      "default": "8080"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

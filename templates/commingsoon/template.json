@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Coming Soon Server (Om Prakash Tiwari)",
+  "name": "commingsoon",
+  "category": "Utilities",
+  "description": "Lightweight Coming Soon / Maintenance page web server.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/commingsoon/icon.svg",
+  "image": "optiwariindia/commingsoon:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/commingsoon/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "TITLE",
+      "label": "Page Title",
+      "description": "Main title displayed on coming soon page",
+      "default": "Coming Soon"
+    },
+    {
+      "name": "SUBTITLE",
+      "label": "Page Subtitle",
+      "description": "Subtitle text description",
+      "default": "We are launching our new application soon!"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+services:
+  location-ip:
+    image: optiwariindia/location-ip:latest
+    container_name: location-ip
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

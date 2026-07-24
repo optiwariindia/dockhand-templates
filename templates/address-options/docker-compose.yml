@@ -1,0 +1,10 @@
+services:
+  address-options:
+    image: optiwariindia/address-options:latest
+    container_name: address-options
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

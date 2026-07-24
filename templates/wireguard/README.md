@@ -14,7 +14,7 @@ Extremely simple yet fast and modern VPN server.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -69,7 +69,7 @@ wireguard.example.com {
    ```bash
    docker stop wireguard
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf wireguard-backup-$(date +%F).tar.gz ./data/wireguard
    ```
@@ -86,8 +86,5 @@ wireguard.example.com {
    ```bash
    docker stop wireguard && docker rm wireguard
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf wireguard-backup-YYYY-MM-DD.tar.gz -C ./data/wireguard
-   ```
+2. Extract backup archive to `./data/wireguard`.
 3. Redeploy the stack via Dockhand.

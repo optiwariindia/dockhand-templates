@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Address Options API (Om Prakash Tiwari)",
+  "name": "address-options",
+  "category": "Microservices",
+  "description": "API server providing complete, structured lists of countries, states, and cities.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/address-options/icon.svg",
+  "image": "optiwariindia/address-options:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/address-options/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Internal application HTTP port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

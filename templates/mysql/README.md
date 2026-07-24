@@ -14,7 +14,7 @@ World's most popular open-source relational database system.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -68,7 +68,7 @@ mysql.example.com {
    ```bash
    docker stop mysql
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf mysql-backup-$(date +%F).tar.gz ./data/mysql
    ```
@@ -85,8 +85,5 @@ mysql.example.com {
    ```bash
    docker stop mysql && docker rm mysql
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf mysql-backup-YYYY-MM-DD.tar.gz -C ./data/mysql
-   ```
+2. Extract backup archive to `./data/mysql`.
 3. Redeploy the stack via Dockhand.

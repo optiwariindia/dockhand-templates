@@ -14,7 +14,7 @@ Intuitive web interface for NGINX proxying with free SSL certificates.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -67,7 +67,7 @@ nginx-proxy-manager.example.com {
    ```bash
    docker stop nginx-proxy-manager
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf nginx-proxy-manager-backup-$(date +%F).tar.gz ./data/nginx-proxy-manager
    ```
@@ -84,8 +84,5 @@ nginx-proxy-manager.example.com {
    ```bash
    docker stop nginx-proxy-manager && docker rm nginx-proxy-manager
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf nginx-proxy-manager-backup-YYYY-MM-DD.tar.gz -C ./data/nginx-proxy-manager
-   ```
+2. Extract backup archive to `./data/nginx-proxy-manager`.
 3. Redeploy the stack via Dockhand.

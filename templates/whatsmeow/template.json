@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Whatsmeow Listener (Om Prakash Tiwari)",
+  "name": "whatsmeow",
+  "category": "Microservices",
+  "description": "Lightweight listener and API service for WhatsApp events and webhooks.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/whatsmeow/icon.svg",
+  "image": "optiwariindia/whatsmeow:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/whatsmeow/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "SESSION_PATH",
+      "label": "Session Directory Path",
+      "description": "Host directory for persistent WhatsApp SQLite session DB",
+      "default": "./data/whatsmeow"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

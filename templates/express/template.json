@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Express Environment (Om Prakash Tiwari)",
+  "name": "express",
+  "category": "Development",
+  "description": "Node.js Express application container environment.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/express/icon.svg",
+  "image": "optiwariindia/express:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/express/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "NODE_ENV",
+      "label": "Node Environment",
+      "description": "Node.js environment setting",
+      "default": "production"
+    },
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Internal app HTTP port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

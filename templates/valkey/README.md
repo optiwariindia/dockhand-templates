@@ -14,7 +14,7 @@ High-performance open-source in-memory datastore (Redis fork).
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -65,7 +65,7 @@ valkey.example.com {
    ```bash
    docker stop valkey
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf valkey-backup-$(date +%F).tar.gz ./data/valkey
    ```
@@ -82,8 +82,5 @@ valkey.example.com {
    ```bash
    docker stop valkey && docker rm valkey
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf valkey-backup-YYYY-MM-DD.tar.gz -C ./data/valkey
-   ```
+2. Extract backup archive to `./data/valkey`.
 3. Redeploy the stack via Dockhand.

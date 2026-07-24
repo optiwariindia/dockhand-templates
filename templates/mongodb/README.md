@@ -14,7 +14,7 @@ High-performance document-oriented NoSQL database server.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -66,7 +66,7 @@ mongodb.example.com {
    ```bash
    docker stop mongodb
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf mongodb-backup-$(date +%F).tar.gz ./data/mongodb
    ```
@@ -83,8 +83,5 @@ mongodb.example.com {
    ```bash
    docker stop mongodb && docker rm mongodb
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf mongodb-backup-YYYY-MM-DD.tar.gz -C ./data/mongodb
-   ```
+2. Extract backup archive to `./data/mongodb`.
 3. Redeploy the stack via Dockhand.

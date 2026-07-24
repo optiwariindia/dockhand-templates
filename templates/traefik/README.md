@@ -14,7 +14,7 @@ Cloud-native edge router and HTTP reverse proxy with auto-discovery.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -66,7 +66,7 @@ traefik.example.com {
    ```bash
    docker stop traefik
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf traefik-backup-$(date +%F).tar.gz ./data/traefik
    ```
@@ -83,8 +83,5 @@ traefik.example.com {
    ```bash
    docker stop traefik && docker rm traefik
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf traefik-backup-YYYY-MM-DD.tar.gz -C ./data/traefik
-   ```
+2. Extract backup archive to `./data/traefik`.
 3. Redeploy the stack via Dockhand.

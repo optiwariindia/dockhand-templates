@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Pravah Realtime Sync (Om Prakash Tiwari)",
+  "name": "pravah",
+  "category": "Microservices",
+  "description": "Real-time event synchronization engine and broadcasting server.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah/icon.svg",
+  "image": "optiwariindia/pravah:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/pravah/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Application listening port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

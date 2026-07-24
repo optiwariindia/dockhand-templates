@@ -1,0 +1,11 @@
+services:
+  livereload:
+    image: optiwariindia/livereload:latest
+    container_name: livereload
+    restart: unless-stopped
+    ports:
+      - "35729:35729"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${WATCH_DIR}:/app/watch

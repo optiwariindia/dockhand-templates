@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "VS Code Tunnel (Om Prakash Tiwari)",
+  "name": "vscode-tunnel",
+  "category": "Development",
+  "description": "VS Code Tunnel server container for remote, secure web-based IDE access.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/vscode-tunnel/icon.svg",
+  "image": "optiwariindia/vscode-tunnel:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/vscode-tunnel/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "TUNNEL_NAME",
+      "label": "Tunnel Name",
+      "description": "Unique identifier name for VS Code Tunnel",
+      "default": "dockhand-vscode"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for user settings and extensions",
+      "default": "./data/vscode-tunnel"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

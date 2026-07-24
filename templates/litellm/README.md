@@ -14,7 +14,7 @@ Unified I/O proxy for 100+ LLM APIs with load balancing & tracking.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -65,7 +65,7 @@ litellm.example.com {
    ```bash
    docker stop litellm
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf litellm-backup-$(date +%F).tar.gz ./data/litellm
    ```
@@ -82,8 +82,5 @@ litellm.example.com {
    ```bash
    docker stop litellm && docker rm litellm
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf litellm-backup-YYYY-MM-DD.tar.gz -C ./data/litellm
-   ```
+2. Extract backup archive to `./data/litellm`.
 3. Redeploy the stack via Dockhand.

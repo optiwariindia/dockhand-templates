@@ -14,7 +14,7 @@ Powerful, open-source object-relational database system.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -67,7 +67,7 @@ postgresql.example.com {
    ```bash
    docker stop postgresql
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf postgresql-backup-$(date +%F).tar.gz ./data/postgresql
    ```
@@ -84,8 +84,5 @@ postgresql.example.com {
    ```bash
    docker stop postgresql && docker rm postgresql
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf postgresql-backup-YYYY-MM-DD.tar.gz -C ./data/postgresql
-   ```
+2. Extract backup archive to `./data/postgresql`.
 3. Redeploy the stack via Dockhand.

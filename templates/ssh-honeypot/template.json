@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "SSH Honeypot (Om Prakash Tiwari)",
+  "name": "ssh-honeypot",
+  "category": "Security",
+  "description": "SSH honeypot service designed to detect, trap, and log intruder interactions.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/ssh-honeypot/icon.svg",
+  "image": "optiwariindia/ssh-honeypot:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/ssh-honeypot/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "LOG_PATH",
+      "label": "Log Directory Path",
+      "description": "Host path for storing intruder session logs",
+      "default": "./data/ssh-honeypot"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

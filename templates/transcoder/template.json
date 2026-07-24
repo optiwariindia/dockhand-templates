@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Transcoder API (Om Prakash Tiwari)",
+  "name": "transcoder",
+  "category": "Utilities",
+  "description": "High-speed video and audio media transcoding microservice.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/transcoder/icon.svg",
+  "image": "optiwariindia/transcoder:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/transcoder/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "DATA_PATH",
+      "label": "Media Directory Path",
+      "description": "Host directory for incoming and output media files",
+      "default": "./data/transcoder"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

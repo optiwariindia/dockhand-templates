@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Email Template Service (Om Prakash Tiwari)",
+  "name": "email-template",
+  "category": "Microservices",
+  "description": "HTML Email Template rendering and live preview server.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-template/icon.svg",
+  "image": "optiwariindia/email-template:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/email-template/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "TEMPLATE_DIR",
+      "label": "Template Directory Path",
+      "description": "Host path for custom HTML templates",
+      "default": "./data/email-templates"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

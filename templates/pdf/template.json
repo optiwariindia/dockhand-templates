@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "PDF Generator (Om Prakash Tiwari)",
+  "name": "pdf",
+  "category": "Utilities",
+  "description": "HTML-to-PDF rendering and document compilation microservice.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pdf/icon.svg",
+  "image": "optiwariindia/pdf:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/pdf/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Server listening port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

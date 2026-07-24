@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "React Application Server (Om Prakash Tiwari)",
+  "name": "react-server",
+  "category": "Development",
+  "description": "React web application web server and static asset host.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/react-server/icon.svg",
+  "image": "optiwariindia/react-server:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/react-server/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PUBLIC_DIR",
+      "label": "Public Directory Path",
+      "description": "Host directory containing built static files",
+      "default": "./data/react-app"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

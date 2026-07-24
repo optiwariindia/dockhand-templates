@@ -1,0 +1,10 @@
+services:
+  pdf:
+    image: optiwariindia/pdf:latest
+    container_name: pdf
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

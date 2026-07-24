@@ -14,7 +14,7 @@ Self-hosted lightweight software development platform driven by the community.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -67,7 +67,7 @@ forgejo.example.com {
    ```bash
    docker stop forgejo
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf forgejo-backup-$(date +%F).tar.gz ./data/forgejo
    ```
@@ -84,8 +84,5 @@ forgejo.example.com {
    ```bash
    docker stop forgejo && docker rm forgejo
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf forgejo-backup-YYYY-MM-DD.tar.gz -C ./data/forgejo
-   ```
+2. Extract backup archive to `./data/forgejo`.
 3. Redeploy the stack via Dockhand.

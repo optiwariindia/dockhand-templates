@@ -1,0 +1,11 @@
+services:
+  captcha:
+    image: optiwariindia/captcha:latest
+    container_name: captcha
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      SECRET_KEY: ${SECRET_KEY}
+      TZ: ${TZ}

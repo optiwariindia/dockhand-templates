@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "ExRate API (Om Prakash Tiwari)",
+  "name": "exrate",
+  "category": "Microservices",
+  "description": "Exchange rate API with daily caching and multi-currency conversion support.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/exrate/icon.svg",
+  "image": "optiwariindia/exrate:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/exrate/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Internal HTTP port",
+      "default": "3000"
+    },
+    {
+      "name": "CACHE_TTL",
+      "label": "Cache TTL (seconds)",
+      "description": "Expiration time for cached exchange rates",
+      "default": "86400"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

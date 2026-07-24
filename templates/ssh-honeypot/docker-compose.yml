@@ -1,0 +1,11 @@
+services:
+  ssh-honeypot:
+    image: optiwariindia/ssh-honeypot:latest
+    container_name: ssh-honeypot
+    restart: unless-stopped
+    ports:
+      - "2222:22"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${LOG_PATH}:/var/log/honeypot

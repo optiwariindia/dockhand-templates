@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Excel Microservice (Om Prakash Tiwari)",
+  "name": "excel",
+  "category": "Utilities",
+  "description": "Excel spreadsheet parsing, data generation, and transformation API.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/excel/icon.svg",
+  "image": "optiwariindia/excel:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/excel/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Server listening port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

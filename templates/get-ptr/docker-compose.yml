@@ -1,0 +1,10 @@
+services:
+  get-ptr:
+    image: optiwariindia/get-ptr:latest
+    container_name: get-ptr
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

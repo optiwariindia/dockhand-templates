@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "BizBandhan Trace RUM (Om Prakash Tiwari)",
+  "name": "bizbandhan-trace",
+  "category": "Monitoring",
+  "description": "Lightweight, OpenTelemetry-native Real-User Monitoring (RUM) telemetry ingestion service.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/bizbandhan-trace/icon.svg",
+  "image": "optiwariindia/bizbandhan-trace:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/bizbandhan-trace/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "Ingestion Port",
+      "description": "OTLP/HTTP ingestion port",
+      "default": "4318"
+    },
+    {
+      "name": "DATA_PATH",
+      "label": "Data Directory Path",
+      "description": "Host path for local traces storage",
+      "default": "./data/bizbandhan-trace"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

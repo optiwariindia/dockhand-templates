@@ -4,6 +4,35 @@
     {
       "version": "2",
       "type": 1,
+      "title": "Address Options API (Om Prakash Tiwari)",
+      "name": "address-options",
+      "category": "Microservices",
+      "description": "API server providing complete, structured lists of countries, states, and cities.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/address-options/icon.svg",
+      "image": "optiwariindia/address-options:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/address-options/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Internal application HTTP port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "AdGuard Home",
       "name": "adguard-home",
       "category": "Networking",
@@ -97,6 +126,41 @@
     {
       "version": "2",
       "type": 1,
+      "title": "BizBandhan Trace RUM (Om Prakash Tiwari)",
+      "name": "bizbandhan-trace",
+      "category": "Monitoring",
+      "description": "Lightweight, OpenTelemetry-native Real-User Monitoring (RUM) telemetry ingestion service.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/bizbandhan-trace/icon.svg",
+      "image": "optiwariindia/bizbandhan-trace:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/bizbandhan-trace/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "Ingestion Port",
+          "description": "OTLP/HTTP ingestion port",
+          "default": "4318"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for local traces storage",
+          "default": "./data/bizbandhan-trace"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "Caddy",
       "name": "caddy",
       "category": "Reverse Proxy",
@@ -120,6 +184,76 @@
           "label": "Data Directory Path",
           "description": "Host directory for certificates & state",
           "default": "./data/caddy"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "CAPTCHA Service (Om Prakash Tiwari)",
+      "name": "captcha",
+      "category": "Security",
+      "description": "CAPTCHA challenge image generation and verification API.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/captcha/icon.svg",
+      "image": "optiwariindia/captcha:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/captcha/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Server listening port",
+          "default": "3000"
+        },
+        {
+          "name": "SECRET_KEY",
+          "label": "Secret Key",
+          "description": "Encryption key for signing captcha tokens",
+          "default": "captchasecret123"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Coming Soon Server (Om Prakash Tiwari)",
+      "name": "commingsoon",
+      "category": "Utilities",
+      "description": "Lightweight Coming Soon / Maintenance page web server.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/commingsoon/icon.svg",
+      "image": "optiwariindia/commingsoon:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/commingsoon/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "TITLE",
+          "label": "Page Title",
+          "description": "Main title displayed on coming soon page",
+          "default": "Coming Soon"
+        },
+        {
+          "name": "SUBTITLE",
+          "label": "Page Subtitle",
+          "description": "Subtitle text description",
+          "default": "We are launching our new application soon!"
         },
         {
           "name": "TZ",
@@ -184,6 +318,210 @@
           "label": "Log Level",
           "description": "Dozzle process logging verbosity",
           "default": "info"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Email Template Service (Om Prakash Tiwari)",
+      "name": "email-template",
+      "category": "Microservices",
+      "description": "HTML Email Template rendering and live preview server.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-template/icon.svg",
+      "image": "optiwariindia/email-template:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/email-template/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "TEMPLATE_DIR",
+          "label": "Template Directory Path",
+          "description": "Host path for custom HTML templates",
+          "default": "./data/email-templates"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Email Validator API (Om Prakash Tiwari)",
+      "name": "email-validator",
+      "category": "Microservices",
+      "description": "Email syntax, MX record, and mailbox deliverability checking API.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-validator/icon.svg",
+      "image": "optiwariindia/email-validator:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/email-validator/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Server listening port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Excel Microservice (Om Prakash Tiwari)",
+      "name": "excel",
+      "category": "Utilities",
+      "description": "Excel spreadsheet parsing, data generation, and transformation API.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/excel/icon.svg",
+      "image": "optiwariindia/excel:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/excel/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Server listening port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Express Twig Mailer (Om Prakash Tiwari)",
+      "name": "express-twig-mailer",
+      "category": "Microservices",
+      "description": "Express.js & Twig email dispatch microservice with SMTP support.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/express-twig-mailer/icon.svg",
+      "image": "optiwariindia/express-twig-mailer:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/express-twig-mailer/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "SMTP_HOST",
+          "label": "SMTP Server Host",
+          "description": "Outbound SMTP server host",
+          "default": "smtp.example.com"
+        },
+        {
+          "name": "SMTP_PORT",
+          "label": "SMTP Server Port",
+          "description": "Outbound SMTP server port",
+          "default": "587"
+        },
+        {
+          "name": "SMTP_USER",
+          "label": "SMTP Username",
+          "description": "SMTP login username",
+          "default": "user@example.com"
+        },
+        {
+          "name": "SMTP_PASS",
+          "label": "SMTP Password",
+          "description": "SMTP login password",
+          "default": "smtppass123"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Express Environment (Om Prakash Tiwari)",
+      "name": "express",
+      "category": "Development",
+      "description": "Node.js Express application container environment.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/express/icon.svg",
+      "image": "optiwariindia/express:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/express/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "NODE_ENV",
+          "label": "Node Environment",
+          "description": "Node.js environment setting",
+          "default": "production"
+        },
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Internal app HTTP port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "ExRate API (Om Prakash Tiwari)",
+      "name": "exrate",
+      "category": "Microservices",
+      "description": "Exchange rate API with daily caching and multi-currency conversion support.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/exrate/icon.svg",
+      "image": "optiwariindia/exrate:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/exrate/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Internal HTTP port",
+          "default": "3000"
+        },
+        {
+          "name": "CACHE_TTL",
+          "label": "Cache TTL (seconds)",
+          "description": "Expiration time for cached exchange rates",
+          "default": "86400"
         },
         {
           "name": "TZ",
@@ -278,6 +616,93 @@
     {
       "version": "2",
       "type": 1,
+      "title": "API Gateway (Om Prakash Tiwari)",
+      "name": "gateway",
+      "category": "Reverse Proxy",
+      "description": "Lightweight API Gateway service for routing microservice requests.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gateway/icon.svg",
+      "image": "optiwariindia/gateway:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/gateway/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Directory Path",
+          "description": "Host path for gateway routes configuration",
+          "default": "./config/gateway"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Get-PTR Resolver (Om Prakash Tiwari)",
+      "name": "get-ptr",
+      "category": "Utilities",
+      "description": "Reverse DNS (PTR record) lookup microservice.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/get-ptr/icon.svg",
+      "image": "optiwariindia/get-ptr:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/get-ptr/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Internal HTTP port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "GetCN Inspector (Om Prakash Tiwari)",
+      "name": "getcn",
+      "category": "Utilities",
+      "description": "SSL Certificate inspector and Common Name (CN) extraction microservice.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/getcn/icon.svg",
+      "image": "optiwariindia/getcn:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/getcn/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Internal server port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "Gitea",
       "name": "gitea",
       "category": "Development",
@@ -348,6 +773,35 @@
           "label": "Data Directory Path",
           "description": "Host path for storing Grafana dashboards and DB",
           "default": "./data/grafana"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Gulp Runner (Om Prakash Tiwari)",
+      "name": "gulp-runner",
+      "category": "Development",
+      "description": "Automated Gulp task runner environment for building frontend assets.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/gulp-runner/icon.svg",
+      "image": "optiwariindia/gulp-runner:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/gulp-runner/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PROJECT_PATH",
+          "label": "Project Directory Path",
+          "description": "Host directory containing Gulpfile.js and source files",
+          "default": "./data/gulp-project"
         },
         {
           "name": "TZ",
@@ -459,6 +913,64 @@
           "label": "Config File Directory",
           "description": "Directory containing config.yaml",
           "default": "./config/litellm"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "LiveReload Server (Om Prakash Tiwari)",
+      "name": "livereload",
+      "category": "Development",
+      "description": "LiveReload server for automatically reloading browsers on file changes in Docker.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/livereload/icon.svg",
+      "image": "optiwariindia/livereload:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/livereload/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "WATCH_DIR",
+          "label": "Watch Directory Path",
+          "description": "Host path containing files to watch for auto-reload",
+          "default": "./data/livereload"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Location IP API (Om Prakash Tiwari)",
+      "name": "location-ip",
+      "category": "Microservices",
+      "description": "API microservice providing country code and IP Address of host using Whois lookup.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/location-ip/icon.svg",
+      "image": "optiwariindia/location-ip:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/location-ip/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Internal server port",
+          "default": "3000"
         },
         {
           "name": "TZ",
@@ -822,6 +1334,93 @@
     {
       "version": "2",
       "type": 1,
+      "title": "PHP Environment (Om Prakash Tiwari)",
+      "name": "optiwari-php",
+      "category": "Development",
+      "description": "Custom PHP web application runtime container.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/optiwari-php/icon.svg",
+      "image": "optiwariindia/php:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/optiwari-php/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "WEB_ROOT",
+          "label": "Web Root Path",
+          "description": "Host path for PHP application code",
+          "default": "./data/php"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "OpenTelemetry Collector (Om Prakash Tiwari)",
+      "name": "otel",
+      "category": "Monitoring",
+      "description": "OpenTelemetry Collector container for metrics, logs, and traces pipeline.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/otel/icon.svg",
+      "image": "optiwariindia/otel:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/otel/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "CONFIG_PATH",
+          "label": "Config Directory Path",
+          "description": "Host path for otel-collector-config.yaml",
+          "default": "./config/otel"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "PDF Generator (Om Prakash Tiwari)",
+      "name": "pdf",
+      "category": "Utilities",
+      "description": "HTML-to-PDF rendering and document compilation microservice.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pdf/icon.svg",
+      "image": "optiwariindia/pdf:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/pdf/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Server listening port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "Pi-hole",
       "name": "pi-hole",
       "category": "Networking",
@@ -939,6 +1538,70 @@
     {
       "version": "2",
       "type": 1,
+      "title": "Pravah Go SSE Server (Om Prakash Tiwari)",
+      "name": "pravah-go",
+      "category": "Microservices",
+      "description": "High-performance Server-Sent Events (SSE) server in Go to sync applications in real-time.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah-go/icon.svg",
+      "image": "optiwariindia/pravah-go:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/pravah-go/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Application listening port",
+          "default": "8080"
+        },
+        {
+          "name": "REDIS_URL",
+          "label": "Redis URL",
+          "description": "Optional Redis connection URL for multi-node pub/sub",
+          "default": ""
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Pravah Realtime Sync (Om Prakash Tiwari)",
+      "name": "pravah",
+      "category": "Microservices",
+      "description": "Real-time event synchronization engine and broadcasting server.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah/icon.svg",
+      "image": "optiwariindia/pravah:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/pravah/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Application listening port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "Prometheus",
       "name": "prometheus",
       "category": "Monitoring",
@@ -1003,6 +1666,35 @@
           "label": "Data Directory Path",
           "description": "Host path for RabbitMQ data persistence",
           "default": "./data/rabbitmq"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "React Application Server (Om Prakash Tiwari)",
+      "name": "react-server",
+      "category": "Development",
+      "description": "React web application web server and static asset host.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/react-server/icon.svg",
+      "image": "optiwariindia/react-server:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/react-server/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PUBLIC_DIR",
+          "label": "Public Directory Path",
+          "description": "Host directory containing built static files",
+          "default": "./data/react-app"
         },
         {
           "name": "TZ",
@@ -1149,6 +1841,64 @@
     {
       "version": "2",
       "type": 1,
+      "title": "SSE Broadcasting Server (Om Prakash Tiwari)",
+      "name": "sse-server",
+      "category": "Microservices",
+      "description": "Lightweight Server-Sent Events (SSE) broadcasting hub.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/sse-server/icon.svg",
+      "image": "optiwariindia/sse-server:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/sse-server/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Server port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "SSH Honeypot (Om Prakash Tiwari)",
+      "name": "ssh-honeypot",
+      "category": "Security",
+      "description": "SSH honeypot service designed to detect, trap, and log intruder interactions.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/ssh-honeypot/icon.svg",
+      "image": "optiwariindia/ssh-honeypot:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/ssh-honeypot/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "LOG_PATH",
+          "label": "Log Directory Path",
+          "description": "Host path for storing intruder session logs",
+          "default": "./data/ssh-honeypot"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "Stirling PDF",
       "name": "stirling-pdf",
       "category": "Utilities",
@@ -1254,6 +2004,35 @@
     {
       "version": "2",
       "type": 1,
+      "title": "Transcoder API (Om Prakash Tiwari)",
+      "name": "transcoder",
+      "category": "Utilities",
+      "description": "High-speed video and audio media transcoding microservice.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/transcoder/icon.svg",
+      "image": "optiwariindia/transcoder:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/transcoder/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATA_PATH",
+          "label": "Media Directory Path",
+          "description": "Host directory for incoming and output media files",
+          "default": "./data/transcoder"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
       "category": "Monitoring",
@@ -1271,6 +2050,93 @@
           "label": "Data Directory Path",
           "description": "Host directory for Uptime Kuma SQLite database",
           "default": "./data/uptime-kuma"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "UUID Go Generator (Om Prakash Tiwari)",
+      "name": "uuid-go",
+      "category": "Microservices",
+      "description": "High-throughput UUID generation microservice built in Go.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/uuid-go/icon.svg",
+      "image": "optiwariindia/uuid-go:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/uuid-go/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Application port",
+          "default": "8080"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Validator Email Service (Om Prakash Tiwari)",
+      "name": "validator-email",
+      "category": "Microservices",
+      "description": "High-throughput email validation and format verification microservice.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/validator-email/icon.svg",
+      "image": "optiwariindia/validator-email:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/validator-email/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Server listening port",
+          "default": "3000"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Website Validator (Om Prakash Tiwari)",
+      "name": "validator-website",
+      "category": "Utilities",
+      "description": "Website availability, SSL validity, and status checking microservice.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/validator-website/icon.svg",
+      "image": "optiwariindia/validator-website:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/validator-website/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "HTTP Port",
+          "description": "Server port",
+          "default": "3000"
         },
         {
           "name": "TZ",
@@ -1353,6 +2219,41 @@
     {
       "version": "2",
       "type": 1,
+      "title": "VS Code Tunnel (Om Prakash Tiwari)",
+      "name": "vscode-tunnel",
+      "category": "Development",
+      "description": "VS Code Tunnel server container for remote, secure web-based IDE access.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/vscode-tunnel/icon.svg",
+      "image": "optiwariindia/vscode-tunnel:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/vscode-tunnel/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "TUNNEL_NAME",
+          "label": "Tunnel Name",
+          "description": "Unique identifier name for VS Code Tunnel",
+          "default": "dockhand-vscode"
+        },
+        {
+          "name": "DATA_PATH",
+          "label": "Data Directory Path",
+          "description": "Host path for user settings and extensions",
+          "default": "./data/vscode-tunnel"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
       "title": "Watchtower",
       "name": "watchtower",
       "category": "Utilities",
@@ -1376,6 +2277,35 @@
           "label": "Cron Schedule",
           "description": "Cron expression for update checks",
           "default": "0 0 4 * * *"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "description": "Container timezone",
+          "default": "UTC"
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "type": 1,
+      "title": "Whatsmeow Listener (Om Prakash Tiwari)",
+      "name": "whatsmeow",
+      "category": "Microservices",
+      "description": "Lightweight listener and API service for WhatsApp events and webhooks.",
+      "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/whatsmeow/icon.svg",
+      "image": "optiwariindia/whatsmeow:latest",
+      "administrator_only": false,
+      "repository": {
+        "url": "https://github.com/optiwariindia/dockhand-templates",
+        "stackfile": "templates/whatsmeow/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "SESSION_PATH",
+          "label": "Session Directory Path",
+          "description": "Host directory for persistent WhatsApp SQLite session DB",
+          "default": "./data/whatsmeow"
         },
         {
           "name": "TZ",

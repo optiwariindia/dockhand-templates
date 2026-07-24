@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "CAPTCHA Service (Om Prakash Tiwari)",
+  "name": "captcha",
+  "category": "Security",
+  "description": "CAPTCHA challenge image generation and verification API.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/captcha/icon.svg",
+  "image": "optiwariindia/captcha:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/captcha/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Server listening port",
+      "default": "3000"
+    },
+    {
+      "name": "SECRET_KEY",
+      "label": "Secret Key",
+      "description": "Encryption key for signing captcha tokens",
+      "default": "captchasecret123"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Pravah Go SSE Server (Om Prakash Tiwari)",
+  "name": "pravah-go",
+  "category": "Microservices",
+  "description": "High-performance Server-Sent Events (SSE) server in Go to sync applications in real-time.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/pravah-go/icon.svg",
+  "image": "optiwariindia/pravah-go:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/pravah-go/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Application listening port",
+      "default": "8080"
+    },
+    {
+      "name": "REDIS_URL",
+      "label": "Redis URL",
+      "description": "Optional Redis connection URL for multi-node pub/sub",
+      "default": ""
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

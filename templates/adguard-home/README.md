@@ -14,7 +14,7 @@ Network-wide software for blocking ads & tracking and controlling DNS requests.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -68,7 +68,7 @@ adguard-home.example.com {
    ```bash
    docker stop adguard-home
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf adguard-home-backup-$(date +%F).tar.gz ./data/adguard-home
    ```
@@ -85,8 +85,5 @@ adguard-home.example.com {
    ```bash
    docker stop adguard-home && docker rm adguard-home
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf adguard-home-backup-YYYY-MM-DD.tar.gz -C ./data/adguard-home
-   ```
+2. Extract backup archive to `./data/adguard-home`.
 3. Redeploy the stack via Dockhand.

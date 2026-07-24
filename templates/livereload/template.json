@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "LiveReload Server (Om Prakash Tiwari)",
+  "name": "livereload",
+  "category": "Development",
+  "description": "LiveReload server for automatically reloading browsers on file changes in Docker.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/livereload/icon.svg",
+  "image": "optiwariindia/livereload:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/livereload/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "WATCH_DIR",
+      "label": "Watch Directory Path",
+      "description": "Host path containing files to watch for auto-reload",
+      "default": "./data/livereload"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

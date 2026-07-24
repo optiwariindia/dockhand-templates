@@ -1,0 +1,47 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Express Twig Mailer (Om Prakash Tiwari)",
+  "name": "express-twig-mailer",
+  "category": "Microservices",
+  "description": "Express.js & Twig email dispatch microservice with SMTP support.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/express-twig-mailer/icon.svg",
+  "image": "optiwariindia/express-twig-mailer:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/express-twig-mailer/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "SMTP_HOST",
+      "label": "SMTP Server Host",
+      "description": "Outbound SMTP server host",
+      "default": "smtp.example.com"
+    },
+    {
+      "name": "SMTP_PORT",
+      "label": "SMTP Server Port",
+      "description": "Outbound SMTP server port",
+      "default": "587"
+    },
+    {
+      "name": "SMTP_USER",
+      "label": "SMTP Username",
+      "description": "SMTP login username",
+      "default": "user@example.com"
+    },
+    {
+      "name": "SMTP_PASS",
+      "label": "SMTP Password",
+      "description": "SMTP login password",
+      "default": "smtppass123"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

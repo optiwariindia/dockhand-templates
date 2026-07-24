@@ -14,7 +14,7 @@ Fast, scalable, open-source relational database management system.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -68,7 +68,7 @@ mariadb.example.com {
    ```bash
    docker stop mariadb
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf mariadb-backup-$(date +%F).tar.gz ./data/mariadb
    ```
@@ -85,8 +85,5 @@ mariadb.example.com {
    ```bash
    docker stop mariadb && docker rm mariadb
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf mariadb-backup-YYYY-MM-DD.tar.gz -C ./data/mariadb
-   ```
+2. Extract backup archive to `./data/mariadb`.
 3. Redeploy the stack via Dockhand.

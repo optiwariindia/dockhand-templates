@@ -1,0 +1,10 @@
+services:
+  excel:
+    image: optiwariindia/excel:latest
+    container_name: excel
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

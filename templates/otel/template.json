@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "OpenTelemetry Collector (Om Prakash Tiwari)",
+  "name": "otel",
+  "category": "Monitoring",
+  "description": "OpenTelemetry Collector container for metrics, logs, and traces pipeline.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/otel/icon.svg",
+  "image": "optiwariindia/otel:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/otel/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "CONFIG_PATH",
+      "label": "Config Directory Path",
+      "description": "Host path for otel-collector-config.yaml",
+      "default": "./config/otel"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

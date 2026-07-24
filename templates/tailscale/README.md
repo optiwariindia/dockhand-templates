@@ -14,12 +14,12 @@ Zero-config VPN that creates a secure mesh network among all your devices.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
 ## 🔌 Ports
-* None (Uses host network or mesh overlay)
+* None (Uses internal network or volume mount)
 
 ---
 
@@ -54,7 +54,7 @@ labels:
 Add to your `Caddyfile`:
 ```caddy
 tailscale.example.com {
-    reverse_proxy tailscale:8080
+    reverse_proxy tailscale:3000
 }
 ```
 
@@ -66,7 +66,7 @@ tailscale.example.com {
    ```bash
    docker stop tailscale
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf tailscale-backup-$(date +%F).tar.gz ./data/tailscale
    ```
@@ -83,8 +83,5 @@ tailscale.example.com {
    ```bash
    docker stop tailscale && docker rm tailscale
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf tailscale-backup-YYYY-MM-DD.tar.gz -C ./data/tailscale
-   ```
+2. Extract backup archive to `./data/tailscale`.
 3. Redeploy the stack via Dockhand.

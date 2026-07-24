@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "SSE Broadcasting Server (Om Prakash Tiwari)",
+  "name": "sse-server",
+  "category": "Microservices",
+  "description": "Lightweight Server-Sent Events (SSE) broadcasting hub.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/sse-server/icon.svg",
+  "image": "optiwariindia/sse-server:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/sse-server/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Server port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

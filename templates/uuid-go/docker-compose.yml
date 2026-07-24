@@ -1,0 +1,10 @@
+services:
+  uuid-go:
+    image: optiwariindia/uuid-go:latest
+    container_name: uuid-go
+    restart: unless-stopped
+    ports:
+      - "8080:${PORT}"
+    environment:
+      PORT: ${PORT}
+      TZ: ${TZ}

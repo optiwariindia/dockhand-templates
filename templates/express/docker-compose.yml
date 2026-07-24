@@ -1,0 +1,11 @@
+services:
+  express:
+    image: optiwariindia/express:latest
+    container_name: express
+    restart: unless-stopped
+    ports:
+      - "3000:${PORT}"
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      PORT: ${PORT}
+      TZ: ${TZ}

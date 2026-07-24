@@ -14,7 +14,7 @@ Robust, locally hosted web application that allows you to perform operations on 
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -65,7 +65,7 @@ stirling-pdf.example.com {
    ```bash
    docker stop stirling-pdf
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf stirling-pdf-backup-$(date +%F).tar.gz ./data/stirling-pdf
    ```
@@ -82,8 +82,5 @@ stirling-pdf.example.com {
    ```bash
    docker stop stirling-pdf && docker rm stirling-pdf
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf stirling-pdf-backup-YYYY-MM-DD.tar.gz -C ./data/stirling-pdf
-   ```
+2. Extract backup archive to `./data/stirling-pdf`.
 3. Redeploy the stack via Dockhand.

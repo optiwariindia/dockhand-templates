@@ -14,7 +14,7 @@ All-in-one AI enterprise workspace for RAG, custom AI agents, and documents.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
@@ -64,7 +64,7 @@ anythingllm.example.com {
    ```bash
    docker stop anythingllm
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf anythingllm-backup-$(date +%F).tar.gz ./data/anythingllm
    ```
@@ -81,8 +81,5 @@ anythingllm.example.com {
    ```bash
    docker stop anythingllm && docker rm anythingllm
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf anythingllm-backup-YYYY-MM-DD.tar.gz -C ./data/anythingllm
-   ```
+2. Extract backup archive to `./data/anythingllm`.
 3. Redeploy the stack via Dockhand.

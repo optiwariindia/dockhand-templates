@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Location IP API (Om Prakash Tiwari)",
+  "name": "location-ip",
+  "category": "Microservices",
+  "description": "API microservice providing country code and IP Address of host using Whois lookup.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/location-ip/icon.svg",
+  "image": "optiwariindia/location-ip:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/location-ip/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Internal server port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

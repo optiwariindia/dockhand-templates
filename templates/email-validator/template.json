@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "type": 1,
+  "title": "Email Validator API (Om Prakash Tiwari)",
+  "name": "email-validator",
+  "category": "Microservices",
+  "description": "Email syntax, MX record, and mailbox deliverability checking API.",
+  "icon": "https://raw.githubusercontent.com/optiwariindia/dockhand-templates/main/templates/email-validator/icon.svg",
+  "image": "optiwariindia/email-validator:latest",
+  "administrator_only": false,
+  "repository": {
+    "url": "https://github.com/optiwariindia/dockhand-templates",
+    "stackfile": "templates/email-validator/docker-compose.yml"
+  },
+  "env": [
+    {
+      "name": "PORT",
+      "label": "HTTP Port",
+      "description": "Server listening port",
+      "default": "3000"
+    },
+    {
+      "name": "TZ",
+      "label": "Timezone",
+      "description": "Container timezone",
+      "default": "UTC"
+    }
+  ]
+}

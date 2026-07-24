@@ -1,0 +1,11 @@
+services:
+  commingsoon:
+    image: optiwariindia/commingsoon:latest
+    container_name: commingsoon
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      TITLE: ${TITLE}
+      SUBTITLE: ${SUBTITLE}
+      TZ: ${TZ}

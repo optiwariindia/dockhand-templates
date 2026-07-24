@@ -14,12 +14,12 @@ Automated Docker container base image updater.
 * Docker Engine 20.10+
 * Docker Compose v2+
 * Dockhand or Portainer management UI
-* Persistent storage path configured on the host machine.
+* Host path configured for persistent volumes (if required).
 
 ---
 
 ## 🔌 Ports
-* None (Uses host network or mesh overlay)
+* None (Uses internal network or volume mount)
 
 ---
 
@@ -53,7 +53,7 @@ labels:
 Add to your `Caddyfile`:
 ```caddy
 watchtower.example.com {
-    reverse_proxy watchtower:8080
+    reverse_proxy watchtower:3000
 }
 ```
 
@@ -65,7 +65,7 @@ watchtower.example.com {
    ```bash
    docker stop watchtower
    ```
-2. Archive the host persistent directory specified by `${DATA_PATH}`:
+2. Archive persistent volumes:
    ```bash
    tar -czvf watchtower-backup-$(date +%F).tar.gz ./data/watchtower
    ```
@@ -82,8 +82,5 @@ watchtower.example.com {
    ```bash
    docker stop watchtower && docker rm watchtower
    ```
-2. Extract your backup archive to the designated `${DATA_PATH}`:
-   ```bash
-   tar -xzvf watchtower-backup-YYYY-MM-DD.tar.gz -C ./data/watchtower
-   ```
+2. Extract backup archive to `./data/watchtower`.
 3. Redeploy the stack via Dockhand.

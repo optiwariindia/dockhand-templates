@@ -1,0 +1,12 @@
+services:
+  otel:
+    image: optiwariindia/otel:latest
+    container_name: otel
+    restart: unless-stopped
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ${CONFIG_PATH}:/etc/otel

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_react_server" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#61DAFB" />
+      <stop offset="100%" stop-color="#20A1C9" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad_react_server)" />
+  <g transform="translate(24, 24) scale(0.625)" fill="#FFFFFF">
+    <path d="M64 16C37.5 16 16 37.5 16 64s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm0 24a24 24 0 110 48 24 24 0 010-48z"/>
+  </g>
+</svg>
